@@ -1,0 +1,1062 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Il Resto del Doge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styling/application_style.css">
+</head>
+<body>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="navigation-drawer" aria-labelledby="navigation-drawer-label">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="navigation-drawer-label"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-0">
+        <section class="input-group mb-3 mx-2">
+            <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+            <input type="text" class="form-control search-input" placeholder="Cerca articoli,autori,argomenti..." aria-label="Username" aria-describedby="basic-addon1">
+        </section>
+        <section class="user-options pt-3">
+            <div class="option p-2">
+                <i class="bi bi-person-circle"></i>
+                <h3><a>Accedi</a></h3>
+            </div>
+            <div class="option p-2">
+                <i class="bi bi-tag-fill"></i>
+                <h3><a>Abbonati</a></h3>
+                <i class="link-secondary bi-arrow-right-circle-fill"></i>
+            </div>
+            <div class="option p-2">
+                <i class="bi bi-envelope"></i>
+                <h3><a>Newsletter</a></h3>
+            </div>
+        </section>
+        <section class="topic-grid container-fluid pt-2">
+            <div class="grid-content row row-cols-2 row-cols-sm-4 row-cols-md-2">
+               <h4 class="topic-grid-title col-12 col-sm-12 col-md-12"><a href="#">Sezioni</a></h4>
+                <h4 class="col"><a href="#">Cronaca</a></h4>
+                <h4 class="col"><a href="#">Sport</a></h4>
+                <h4 class="col"><a href="#">Cosa Fare</a></h4>
+                <h4 class="col"><a href="#">Politica</a></h4>
+                <h4 class="col"><a href="#">Economia</a></h4>
+                <h4 class="col"><a href="#">Cultura e Spettacoli</h4>
+                <h4></h4>
+            </div>
+        </section>
+        <section class="suggested-list container-fluid pt-2">
+            <div class="grid-content row row-cols-2 row-cols-sm-4 row-cols-md-2">
+                <h4 class="suggested-list-title col-12 col-sm-12 col-md-12"><a href="#">Speciali</a></h4>
+                <h4 class="col"><a href="#">QN Mobilità</a></h4>
+                <h4 class="col"><a href="#">Top Aziende</a></h4>
+                <h4 class="col"><a href="#">Cronisti in Classe</a></h4>
+                <h4 class="col"><a href="#">Premio Mascagni</a></h4>
+                <h4 class="col"><a href="#">Top 500 Bologna</a></h4>
+                <h4 class="col"><a href="#">Top 500 Romagna</a></h4>
+                <h4 class="col"><a href="#">Podcast</a></h4>
+                <h4 class="col"><a href="#">Alfasigma</a></h4>
+                <h4 class="col"><a href="#">Distretti</a></h4>
+                <h4 class="col"><a href="#">Teatri in regione</a></h4>
+                <h4 class="col"><a href="#">5x1000</a></h4>
+                <h4 class="col"><a href="#">Top 100 Ferrara</a></h4>
+                <h4 class="col"><a href="#">Top 100 Forlì-Cesena</a></h4>
+                <h4 class="col"><a href="#">Top 100 Rimini</a></h4>
+                <h4 class="col"><a href="#">Vivere Riccione</a></a></h4>
+                <h4 class="col"><a href="#"><a href="#">Confabitare</a></h4>
+                <h4 class="col"><a href="#">Vivere Carpi</h4>
+                <h4></h4>
+            </div>
+        </section>
+        <section class="suggested-list container-fluid pt-2">
+            <div class="grid-content row row-cols-2 row-cols-sm-4 row-cols-md-2">
+                <h4 class="suggested-list-title col-12 col-sm-12  col-md-12"><a href="#">Localmente</a></h4>
+                <h4 class="col"><a href="#">AgrigentoOggi</a></h4>
+                <h4 class="col"><a href="#">Casteddu On Line</a></h4>
+                <h4 class="col"><a href="#">L'Immediato</a></h4>
+                <h4 class="col"><a href="#">LecceNews24</a></h4>
+                <h4 class="col"><a href="#">Quotidiano Piemontese</a></h4>
+                <h4 class="col"><a href="#">Senza Colonne News</h4>
+            </div>
+        </section><section class="suggested-list container-fluid pt-2">
+            <div class="grid-content row row-cols-2 row-cols-sm-4 row-cols-md-2">
+                <h4 class="suggested-list-title col-12 col-sm-12  col-md-12"><a href="#">Network</a></h4>
+                <h4 class="col"><a href="#">il Resto del Carlino</a></h4>
+                <h4 class="col"><a href="#">La Nazione</a></h4>
+                <h4 class="col"><a href="#">Quotidiano Nazionale</a></h4>
+                <h4 class="col"><a href="#">il Giorno</a></h4>
+                <h4 class="col"><a href="#">il Telegrafo di Livorno</a></h4>
+                <h4 class="col"><a href="#">Cavallo Magazine</a></h4>
+                <h4 class="col"><a href="#">Motori</a></h4>
+                <h4 class="col"><a href="#">Guida TV</a></h4>
+                <h4 class="col"><a href="#">Necrologie</a></h4>
+                <h4 class="col"><a href="#">Hardware Upgrade</a></h4>
+                <h4 class="col"><a href="#">Pinkitalia</a></h4>
+                <h4 class="col"><a href="#">Pronto Imprese</a></h4>
+                <h4 class="col"><a href="#">Ubitennis</a></h4>
+                <h4 class="col"><a href="#">Prodotti Migliori</h4>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+<div class="page">
+    <nav id="main-nav" class="page-navigation d-none d-md-block">
+        <ul>
+            <li><ul class="nav-list">
+                    <li>
+                        <a data-bs-toggle="offcanvas" href="#navigation-drawer" role="button" aria-controls="navigation-drawer">
+                            <i class="bi bi-list"></i>
+                        </a>
+                    </li>
+                    <li><a href="#"><i class="bi bi-search"></i></a></li>
+                    <li><a href="#">Acquista il giornale</a></li>
+                </ul>
+            </li>
+            <li><a class="nav-title" href="#">il Resto del Doge</a></li>
+            <li><ul class="nav-list">
+                <li><a href="#">Accedi</a></li>
+                <li><a class="subscribe-link border-start ps-3" href="#">Abbonati</a></li>
+                <li><i class="link-secondary bi-arrow-right-circle-fill"></i></li>
+            </ul>
+
+        </ul>
+    </nav>
+    <nav id="main-nav-mobile" class="page-navigation mobile d-block d-md-none">
+        <ul>
+            <li>
+                <a data-bs-toggle="offcanvas" href="#navigation-drawer" role="button" aria-controls="navigation-drawer">
+                    <i class="bi bi-list"></i>
+                </a>
+            </li>
+            <li><a class="nav-title" href="#">il Resto del Doge</a></li>
+            <li><a href="#"><i class="bi bi-search"></i></a></li>
+        </ul>
+        <ul class="mobile-slider-nav p-2">
+            <li class=""><a href="#">Cronaca</a></li>
+            <li class=""><a href="#">Sport</a></li>
+            <li class=""><a href="#">Cosa Fare</a></li>
+            <li class=""><a href="#">Politica</a></li>
+            <li class=""><a href="#">Economia</a></li>
+            <li class=""><a href="#">Cultura & Spettacolo</a></li>
+            <li class=""><a href="#">Speciali</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-container container-fluid">
+        <div class="row">
+            <aside class="advertisement p-0 d-none d-xl-flex col-xl-2">
+                <img class="img-fluid" src="res/img/tassoni-soda.jpg"  />
+            </aside>
+            <div class="page-content col-12 col-xl-8 p-0 p-md-2">
+                <nav class="content-nav d-none d-md-block">
+                    <ul class="content-navigation-list">
+                        <div class="advertisement main">
+                            <img class="img-fluid" src="res/img/amplifon_banner.jpg"  />
+                        </div>
+                        <li class="fill-line"></li>
+                        <li>
+                            <a class="national-daily">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 605.78 45.96" class="Logo_logo--primary-primary-light__rEKiV Logo_logo--xs__KosC2"><path d="M301.27,24.45c0,6.27-2,8.9-5.7,8.9s-5.7-2.63-5.7-8.9V17.28c0-6.27,2.05-8.9,5.7-8.9s5.7,2.63,5.7,8.9Zm10.43-5C311.7,7.87,306.51,0,295.57,0s-16.13,7.87-16.13,19.46v2.81c0,11.59,5.18,19.46,16.13,19.46s16.13-7.87,16.13-19.46ZM253.78.7H244.3V41h9.28v-23h.26L266.9,41h7.74V.7h-9.22V21.83h-.25ZM223,12.29h.26L226.57,25h-7ZM217.36.7,206,41h9.35L217.42,33h11.2L230.73,41h10.18L229.52.7ZM192.46,41h10.11V.7H192.46Zm-35.71,0H171c11.65,0,16.64-7,16.64-19.08V19.78c0-12-5-19.08-16.64-19.08H156.75ZM166.86,33V8.77h3.26c4.74,0,7.23,2.17,7.23,8.64v6.91c0,6.47-2.49,8.64-7.23,8.64ZM140.81,41h10.11V.7H140.81ZM126,41V9H136.2V.7H105.86V9h10V41ZM93.77,24.45c0,6.27-2,8.9-5.7,8.9s-5.7-2.63-5.7-8.9V17.28c0-6.27,2-8.9,5.7-8.9s5.7,2.63,5.7,8.9Zm10.43-5C104.2,7.87,99,0,88.07,0S71.94,7.87,71.94,19.46v2.81c0,11.59,5.18,19.46,16.13,19.46s16.13-7.87,16.13-19.46ZM52.1,41.73c9.41,0,15.42-5.18,15.42-15.68V.7h-10V25.28c0,5-.84,8-5.38,8s-5.38-3-5.38-8V.7h-10V26.05c0,10.5,6,15.68,15.43,15.68M21.83,24.45c0,6.27-2,8.9-5.7,8.9s-5.7-2.63-5.7-8.9V17.28c0-6.27,2.05-8.9,5.7-8.9s5.7,2.63,5.7,8.9Zm10.43-5C32.26,7.87,27.07,0,16.13,0S0,7.87,0,19.46v2.81C0,32.71,4.22,40.13,13.06,41.48L16.19,46H26.31L22.4,40.71c6.66-2.56,9.86-9.35,9.86-18.44Z"></path><path d="M605.78,32.71H590.22v-8h11.53v-8.2H590.22V9h15.43V.7H580.3V41h25.48ZM550.48.7V41H575.7V32.71H560.59V.7ZM529.17,12.29h.25L532.75,25h-7ZM523.53.7,512.14,41h9.35L523.6,33h11.2L536.91,41h10.18L535.69.7ZM487.88.7h-9.47V41h9.28v-23H488L501,41h7.75V.7h-9.22V21.83h-.25Zm-24.7,23.75c0,6.27-2.05,8.9-5.7,8.9s-5.69-2.63-5.69-8.9V17.28c0-6.27,2-8.9,5.69-8.9s5.7,2.63,5.7,8.9Zm10.43-5C473.61,7.87,468.43,0,457.48,0s-16.13,7.87-16.13,19.46v2.81c0,11.59,5.19,19.46,16.13,19.46s16.13-7.87,16.13-19.46ZM426.44,41h10.11V.7H426.44Zm-21.25-8.32,16.07-24.2V.7H393.67V9h15.75L393.48,33.41V41H421.7V32.71ZM373.25,12.29h.26L376.84,25h-7ZM367.62.7,356.23,41h9.34L367.69,33h11.2L381,41h10.17L379.78.7ZM332,.7H322.5V41h9.28v-23H332l13.06,23h7.75V.7h-9.22V21.83h-.26Z"></path></svg>
+                            </a>
+                        </li>
+                        <li class="fill-line"></li>
+                        <ul class="toolbar">
+                            <li><ul class="nav-list">
+                                    <li>
+                                        <a data-bs-toggle="offcanvas" href="#navigation-drawer" role="button" aria-controls="navigation-drawer">
+                                            <i class="bi bi-list"></i>
+                                        </a>
+                                    </li>
+                                    <li><a href="#"><i class="bi bi-search"></i></a></li>
+                                    <li><a href="#">Acquista il giornale</a></li>
+                                </ul>
+                            </li>
+                            <li><ul class="nav-list">
+                                    <li><a href="#">Accedi</a></li>
+                                    <li><a class="subscribe-link border-start ps-3" href="#">Abbonati</a></li>
+                                    <li><i class="link-secondary bi-arrow-right-circle-fill"></i></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <li class="title-line">
+                            <li><a class="nav-title" href="#">il Resto del Doge</a></li>
+
+                        <ul class="toolbar sections d-none d-md-none d-lg-flex">
+                            <li class="city-sections"><a href="#">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    Città
+                            </a></li>
+                            <ul class="section-content">
+                                <li class="nav-section"><a href="#">Cronaca</a></li>
+                                <li class="nav-section"><a href="#">Sport</a></li>
+                                <li class="nav-section"><a href="#">Cosa Fare</a></li>
+                                <li class="nav-section"><a href="#">Politica</a></li>
+                                <li class="nav-section"><a href="#">Economia</a></li>
+                                <li class="nav-section"><a href="#">Cultura & Spettacolo</a></li>
+                                <li class="nav-section"><a href="#">Speciali</a></li>
+                            </ul>
+                        </ul>
+                        <ul class="nav-detail center px-2 py-1 d-flex d-md-flex d-lg-none">
+                            <li class="city-sections my-2 pe-2 me-2"><a href="#">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                Città
+                            </a></li>
+                            <ul class="mobile-slider-nav py-2">
+                                <li class=""><a href="#">Cronaca</a></li>
+                                <li class=""><a href="#">Sport</a></li>
+                                <li class=""><a href="#">Cosa Fare</a></li>
+                                <li class=""><a href="#">Politica</a></li>
+                                <li class=""><a href="#">Economia</a></li>
+                                <li class=""><a href="#">Cultura & Spettacolo</a></li>
+                                <li class=""><a href="#">Speciali</a></li>
+                            </ul>
+                        </ul>
+
+                        <li class="fill-line"></li>
+                        <ul class="toolbar hot-topics">
+                            <li class="nav-topic"><a href="#">Incidente Auto Treno</a></li>
+                            <li class="nav-topic"><a href="#">Schianto A1</a></li>
+                            <li class="nav-topic"><a href="#">Violenza di Gruppo</a></li>
+                            <li class="nav-topic"><a href="#">Davide Ferrerio</a></li>
+                            <li class="nav-topic"><a href="#">Gelate Tardive</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="content-nav mobile d-block d-md-none">
+                    <ul class="nav-detail header py-2">
+                        <li><a href="#">Acquista il giornale</a></li>
+                        <ul>
+                            <li><a href="#">Accedi</a></li>
+                            <li><a class="subscribe-link border-start ps-3" href="#">Abbonati</a></li>
+                        </ul>
+                    </ul>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a data-bs-toggle="offcanvas" href="#navigation-drawer" role="button" aria-controls="navigation-drawer">
+                                <i class="bi bi-list"></i>
+                            </a>
+                        </li>
+                        <li><a class="nav-title" href="#">il Resto del Doge</a></li>
+                        <li><a href="#"><i class="bi bi-search"></i></a></li>
+                    </ul>
+                    <ul class="nav-detail center px-2 py-1">
+                        <li class="city-sections my-2 pe-2 me-2"><a href="#">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            Città
+                        </a></li>
+                        <ul class="mobile-slider-nav py-2">
+                            <li class=""><a href="#">Cronaca</a></li>
+                            <li class=""><a href="#">Sport</a></li>
+                            <li class=""><a href="#">Cosa Fare</a></li>
+                            <li class=""><a href="#">Politica</a></li>
+                            <li class=""><a href="#">Economia</a></li>
+                            <li class=""><a href="#">Cultura & Spettacolo</a></li>
+                            <li class=""><a href="#">Speciali</a></li>
+                        </ul>
+                    </ul>
+                    <ul class="nav-detail footer mobile-slider-nav p-2">
+                        <li class=""><a href="#">Grandine oggi</a></li>
+                        <li class=""><a href="#">Sciopero treni</a></li>
+                        <li class=""><a href="#">Runner ucciso dall'orso</a></li>
+                        <li class=""><a href="#">Medico accusato di omicidio</a></li>
+                        <li class=""><a href="#">Cremonini ed Elisa</a></li>
+                        <li class=""><a href="#">Scheletri umani</a></li>
+                    </ul>
+                    </ul>
+                </nav>
+
+                <div class="advertisement mobile d-block d-md-none ">
+                    <img class="img-fluid" src="res/img/amplifon_banner.jpg"  />
+                </div>
+                <section class="articles-frontpage">
+                    <article class="article container">
+                        <div class="row">
+                            <ul class="article-content col-12 col-md-6 order-1 order-md-0 px-3 pt-2 ">
+                                <li class="article-annotation">
+                                    <span class="live-tag p-1 me-2">
+                                        <i class="bi bi-circle-fill"></i>
+                                        Live
+                                    </span>
+                                    Cosenza
+                                </li>
+                                <a class="article-title" href="#"><h2>Il nuovo giornale di Doge è stato lanciato!</h2></a>
+                                <li class="article-correlated">
+                                    <a class="correlated-link" href="#">
+                                        <b class="root" >Articolo /</b>
+                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                    </a>
+                                    <a class="correlated-link" href="#">
+                                        <b class="root" >Articolo /</b>
+                                        Sei stanco dei soliti siti fatti con un crm? Leggi "il Resto del Doge"!
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="article-image col-12 col-md-6 order-0 order-md-1 ">
+                                <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section class="articles-page-container container-fluid mt-4 mx-0">
+                    <div class="row">
+                        <div class="col-12 col-md-8">
+                            <div class="container">
+                                <div class="row row-cols-1 row-cols-md-2">
+                                    <article class="article article-card col mt-3">
+                                        <div class="article-image">
+                                            <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                        </div>
+                                        <ul class="article-content px-3 pt-2">
+                                            <li class="article-annotation">Cosenza</li>
+                                            <a class="article-title" href="#">
+                                                <h4>Il nuovo giornale di Doge è stato lanciato!</h4>
+                                            </a>
+                                            <li class="article-correlated">
+                                                <a class="correlated-link" href="#">
+                                                    <b class="root" >Articolo /</b>
+                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                </a>
+                                            </li>
+                                            <li class="article-description mt-2">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                            </li>
+                                        </ul>
+                                    </article>
+                                    <article class="article article-card col mt-3">
+                                        <div class="article-image">
+                                            <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                        </div>
+                                        <ul class="article-content px-3 pt-2">
+                                            <li class="article-annotation">Cosenza</li>
+                                            <a class="article-title" href="#"><h4>Il nuovo giornale di Doge è stato lanciato!</h4></a>
+                                            <li class="article-correlated">
+                                                <a class="correlated-link" href="#">
+                                                    <b class="root" >Articolo /</b>
+                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                </a>
+                                            </li>
+                                            <li class="article-description mt-2">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                            </li>
+                                        </ul>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-0 col-md-4 d-none d-md-block">
+                            <article class="article article-mini col">
+                                <ul class="article-content px-3 pt-2">
+                                    <li class="article-annotation">Domodossola</li>
+                                    <a class="article-title" href="#">
+                                        <h4>Il nuovo giornale di Doge è stato lanciato!</h4>
+                                    </a>
+                                    <li class="article-description mt-2">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                    </li>
+                                    <li class="article-author mt-2">
+                                        di <author>Giovanni Giovannini</author>
+                                    </li>
+                                </ul>
+                            </article>
+                            <article class="article article-mini col">
+                                <ul class="article-content px-3 pt-2">
+                                    <li class="article-annotation">Lastra a Signa</li>
+                                    <a class="article-title" href="#">
+                                        <h4>Il nuovo giornale di Doge è stato lanciato!</h4>
+                                    </a>
+                                    <li class="article-description mt-2">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                    </li>
+                                    <li class="article-author mt-2">
+                                        di <author>Marco Marconi</author>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+
+                        <li class="fill-line col-12 mt-5"></li>
+
+                        <article class="article article-inline container-fluid col-12 my-2">
+                            <div class="row">
+                                <ul class="article-content col-12 col-md-8 order-1 order-md-0 px-3 pt-2 ">
+                                    <li class="article-annotation">Cronaca</li>
+                                    <a class="article-title" href="#"><h2>Il nuovo giornale di Doge è stato lanciato!</h2></a>
+                                    <li class="article-description mt-2">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                    </li>
+                                </ul>
+                                <div class="article-image col-12 col-md-4 order-0 order-md-1 py-2">
+                                    <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                </div>
+                            </div>
+                        </article>
+
+                        <li class="fill-line col-12 mb-2"></li>
+
+                        <div class="col-12 col-md-8">
+                            <div class="container">
+                                <div class="row row-cols-1 row-cols-md-2">
+                                    <article class="article article-card col mt-3">
+                                        <div class="article-image">
+                                            <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                        </div>
+                                        <ul class="article-content px-3 pt-2">
+                                            <li class="article-annotation">Sport</li>
+                                            <a class="article-title" href="#">
+                                                <h4>Il nuovo giornale di Doge è stato lanciato!</h4>
+                                            </a>
+                                            <li class="article-correlated">
+                                                <a class="correlated-link" href="#">
+                                                    <b class="root" >Articolo /</b>
+                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                </a>
+                                            </li>
+                                            <li class="article-description mt-2">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                            </li>
+                                        </ul>
+                                    </article>
+                                    <article class="article article-card col mt-3">
+                                        <div class="article-image">
+                                            <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                        </div>
+                                        <ul class="article-content px-3 pt-2">
+                                            <li class="article-annotation">Catanzaro Lido</li>
+                                            <a class="article-title" href="#"><h4>Il nuovo giornale di Doge è stato lanciato!</h4></a>
+                                            <li class="article-correlated">
+                                                <a class="correlated-link" href="#">
+                                                    <b class="root" >Articolo /</b>
+                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                </a>
+                                            </li>
+                                            <li class="article-description mt-2">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                            </li>
+                                        </ul>
+                                    </article>
+                                    <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
+                                        <div class="row">
+                                            <div class="article-image col-12 col-md-6 py-2">
+                                                <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                            </div>
+                                            <ul class="article-content col-12 col-md-6 px-3 pt-2">
+                                                <li class="article-annotation">Cronaca</li>
+                                                <a class="article-title" href="#"><h4>Il nuovo giornale di Doge è stato lanciato!</h4></a>
+                                                <li class="article-description">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                </li>
+                                                <li class="article-author mt-2">
+                                                    di <author>Giovanni Giovannini</author>
+                                                </li>
+                                            </ul>
+                                            <div class="article-correlated col-12">
+                                                <a class="correlated-link mt-2" href="#">
+                                                    <b class="root" >Articolo /</b>
+                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                </a>
+                                                <a class="correlated-link mt-2" href="#">
+                                                    <b class="root" >Articolo /</b>
+                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                </a>
+                                            </div>
+                                            <li class="fill-line col-12 mb-2 mt-4"></li>
+                                        </div>
+                                    </article>
+                                    <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
+                                        <div class="row">
+                                            <div class="article-image col-12 col-md-6 py-2">
+                                                <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                            </div>
+                                            <ul class="article-content col-12 col-md-6 px-3 pt-2">
+                                                <li class="article-annotation">Cronaca</li>
+                                                <a class="article-title" href="#"><h4>Il nuovo giornale di Doge è stato lanciato!</h4></a>
+                                                <li class="article-description">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                </li>
+                                                <li class="article-author mt-2">
+                                                    di <author>Giovanni Giovannini</author>
+                                                </li>
+                                            </ul>
+                                            <div class="article-correlated col-12">
+                                                <a class="correlated-link mt-2" href="#">
+                                                    <b class="root" >Articolo /</b>
+                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                </a>
+                                                <a class="correlated-link mt-2" href="#">
+                                                    <b class="root" >Articolo /</b>
+                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                </a>
+                                            </div>
+                                            <li class="fill-line col-12 mb-2 mt-4"></li>
+                                        </div>
+                                    </article>
+                                    <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
+                                        <div class="row">
+                                            <div class="article-image col-12 col-md-6 py-2">
+                                                <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                            </div>
+                                            <ul class="article-content col-12 col-md-6 px-3 pt-2">
+                                                <li class="article-annotation">Cronaca</li>
+                                                <a class="article-title" href="#"><h4>Il nuovo giornale di Doge è stato lanciato!</h4></a>
+                                                <li class="article-description">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                </li>
+                                                <li class="article-author mt-2">
+                                                    di <author>Giovanni Giovannini</author>
+                                                </li>
+                                            </ul>
+                                            <div class="article-correlated col-12">
+                                                <a class="correlated-link mt-2" href="#">
+                                                    <b class="root" >Articolo /</b>
+                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                </a>
+                                                <a class="correlated-link mt-2" href="#">
+                                                    <b class="root" >Articolo /</b>
+                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                </a>
+                                            </div>
+                                            <li class="fill-line col-12 mb-2 mt-4"></li>
+                                        </div>
+                                    </article>
+                                    <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
+                                        <div class="row">
+                                            <div class="article-image col-12 col-md-6 py-2">
+                                                <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                            </div>
+                                            <ul class="article-content col-12 col-md-6 px-3 pt-2">
+                                                <li class="article-annotation">Cronaca</li>
+                                                <a class="article-title" href="#"><h4>Il nuovo giornale di Doge è stato lanciato!</h4></a>
+                                                <li class="article-description">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                </li>
+                                                <li class="article-author mt-2">
+                                                    di <author>Giovanni Giovannini</author>
+                                                </li>
+                                            </ul>
+                                            <div class="article-correlated col-12">
+                                                <a class="correlated-link mt-2" href="#">
+                                                    <b class="root" >Articolo /</b>
+                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                </a>
+                                                <a class="correlated-link mt-2" href="#">
+                                                    <b class="root" >Articolo /</b>
+                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                </a>
+                                            </div>
+                                            <li class="fill-line col-12 mb-2 mt-4"></li>
+                                        </div>
+                                    </article>
+
+                                    <section class="topic-articles-container col-12 col-md-12 p-2 mt-3">
+                                        <h3 class="topic-articles-title py-2 pt-3"><a href="#">Dall'Italia e dal Mondo</a></h3>
+
+                                        <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
+                                            <div class="row">
+                                                <div class="article-image col-12 col-md-6 py-2">
+                                                    <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                                </div>
+                                                <ul class="article-content col-12 col-md-6 px-3 pt-2">
+                                                    <li class="article-annotation">Cronaca</li>
+                                                    <a class="article-title" href="#"><h4>Il nuovo giornale di Doge è stato lanciato!</h4></a>
+                                                    <li class="article-description">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                    </li>
+                                                    <li class="article-author mt-2">
+                                                        di <author>Giovanni Giovannini</author>
+                                                    </li>
+                                                </ul>
+                                                <div class="article-correlated col-12">
+                                                    <a class="correlated-link mt-2" href="#">
+                                                        <b class="root" >Articolo /</b>
+                                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    </a>
+                                                    <a class="correlated-link mt-2" href="#">
+                                                        <b class="root" >Articolo /</b>
+                                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    </a>
+                                                </div>
+                                                <li class="fill-line col-12 mb-2 mt-4"></li>
+                                            </div>
+                                        </article>
+                                        <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
+                                            <div class="row">
+                                                <div class="article-image col-12 col-md-6 py-2">
+                                                    <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                                </div>
+                                                <ul class="article-content col-12 col-md-6 px-3 pt-2">
+                                                    <li class="article-annotation">Cronaca</li>
+                                                    <a class="article-title" href="#"><h4>Il nuovo giornale di Doge è stato lanciato!</h4></a>
+                                                    <li class="article-description">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                    </li>
+                                                    <li class="article-author mt-2">
+                                                        di <author>Giovanni Giovannini</author>
+                                                    </li>
+                                                </ul>
+                                                <div class="article-correlated col-12">
+                                                    <a class="correlated-link mt-2" href="#">
+                                                        <b class="root" >Articolo /</b>
+                                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    </a>
+                                                    <a class="correlated-link mt-2" href="#">
+                                                        <b class="root" >Articolo /</b>
+                                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    </a>
+                                                </div>
+                                                <li class="fill-line col-12 mb-2 mt-4"></li>
+                                            </div>
+                                        </article>
+                                        <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
+                                            <div class="row">
+                                                <div class="article-image col-12 col-md-6 py-2">
+                                                    <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                                </div>
+                                                <ul class="article-content col-12 col-md-6 px-3 pt-2">
+                                                    <li class="article-annotation">Cronaca</li>
+                                                    <a class="article-title" href="#"><h4>Il nuovo giornale di Doge è stato lanciato!</h4></a>
+                                                    <li class="article-description">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                    </li>
+                                                    <li class="article-author mt-2">
+                                                        di <author>Giovanni Giovannini</author>
+                                                    </li>
+                                                </ul>
+                                                <div class="article-correlated col-12">
+                                                    <a class="correlated-link mt-2" href="#">
+                                                        <b class="root" >Articolo /</b>
+                                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    </a>
+                                                    <a class="correlated-link mt-2" href="#">
+                                                        <b class="root" >Articolo /</b>
+                                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    </a>
+                                                </div>
+                                                <li class="fill-line col-12 mb-2 mt-4"></li>
+                                            </div>
+                                        </article>
+
+                                    </section>
+                                    <section class="topic-articles-container col-12 col-md-12 p-2 mt-3">
+                                        <h3 class="topic-articles-title py-2 pt-3"><a href="#">Serie A</a></h3>
+
+                                        <article class="article article-card col mt-3">
+                                            <div class="article-image">
+                                                <img src="res/img/form-m-j.jpg" class="img-fluid" alt="seriea">
+                                            </div>
+                                            <ul class="article-content px-3 pt-2">
+                                                <li class="article-annotation">Sport</li>
+                                                <a class="article-title" href="#">
+                                                    <h4>Napoli Juve si scontrano!</h4>
+                                                </a>
+                                                <li class="article-correlated">
+                                                    <a class="correlated-link" href="#">
+                                                        <b class="root" >Articolo /</b>
+                                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    </a>
+                                                </li>
+                                                <li class="article-description mt-2">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                </li>
+                                                <div class="article-correlated col-12">
+                                                    <a class="correlated-link mt-2" href="#">
+                                                        <b class="root" >Articolo /</b>
+                                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    </a>
+                                                    <a class="correlated-link mt-2" href="#">
+                                                        <b class="root" >Articolo /</b>
+                                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    </a>
+                                                </div>
+                                                <li class="fill-line col-12 mb-2 mt-4"></li>
+                                            </ul>
+                                        </article>
+
+                                        <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
+                                            <div class="row">
+                                                <div class="article-image col-12 col-md-6 py-2">
+                                                    <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                                </div>
+                                                <ul class="article-content col-12 col-md-6 px-3 pt-2">
+                                                    <li class="article-annotation">Cronaca</li>
+                                                    <a class="article-title" href="#"><h4>Il nuovo giornale di Doge è stato lanciato!</h4></a>
+                                                    <li class="article-description">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                    </li>
+                                                    <li class="article-author mt-2">
+                                                        di <author>Giovanni Giovannini</author>
+                                                    </li>
+                                                </ul>
+                                                <div class="article-correlated col-12">
+                                                    <a class="correlated-link mt-2" href="#">
+                                                        <b class="root" >Articolo /</b>
+                                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    </a>
+                                                    <a class="correlated-link mt-2" href="#">
+                                                        <b class="root" >Articolo /</b>
+                                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    </a>
+                                                </div>
+                                                <li class="fill-line col-12 mb-2 mt-4"></li>
+                                            </div>
+                                        </article>
+                                        <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
+                                            <div class="row">
+                                                <div class="article-image col-12 col-md-6 py-2">
+                                                    <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                                </div>
+                                                <ul class="article-content col-12 col-md-6 px-3 pt-2">
+                                                    <li class="article-annotation">Cronaca</li>
+                                                    <a class="article-title" href="#"><h4>Il nuovo giornale di Doge è stato lanciato!</h4></a>
+                                                    <li class="article-description">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                    </li>
+                                                    <li class="article-author mt-2">
+                                                        di <author>Giovanni Giovannini</author>
+                                                    </li>
+                                                </ul>
+                                                <div class="article-correlated col-12">
+                                                    <a class="correlated-link mt-2" href="#">
+                                                        <b class="root" >Articolo /</b>
+                                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    </a>
+                                                    <a class="correlated-link mt-2" href="#">
+                                                        <b class="root" >Articolo /</b>
+                                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    </a>
+                                                </div>
+                                                <li class="fill-line col-12 mb-2 mt-4"></li>
+                                            </div>
+                                        </article>
+                                        <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
+                                            <div class="row">
+                                                <div class="article-image col-12 col-md-6 py-2">
+                                                    <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                                </div>
+                                                <ul class="article-content col-12 col-md-6 px-3 pt-2">
+                                                    <li class="article-annotation">Cronaca</li>
+                                                    <a class="article-title" href="#"><h4>Il nuovo giornale di Doge è stato lanciato!</h4></a>
+                                                    <li class="article-description">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                    </li>
+                                                    <li class="article-author mt-2">
+                                                        di <author>Giovanni Giovannini</author>
+                                                    </li>
+                                                </ul>
+                                                <div class="article-correlated col-12">
+                                                    <a class="correlated-link mt-2" href="#">
+                                                        <b class="root" >Articolo /</b>
+                                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    </a>
+                                                    <a class="correlated-link mt-2" href="#">
+                                                        <b class="root" >Articolo /</b>
+                                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    </a>
+                                                </div>
+                                                <li class="fill-line col-12 mb-2 mt-4"></li>
+                                            </div>
+                                        </article>
+
+                                    </section>
+                                    <section class="topic-articles-container col-12 col-md-12 p-2 mt-3">
+                                        <h3 class="topic-articles-title py-2 pt-3"><a href="#">Cinema & Spettacolo</a></h3>
+
+                                        <article class="article article-card col mt-3">
+                                            <div class="article-image">
+                                                <img src="res/img/festival.jfif" class="img-fluid" alt="festival">
+                                            </div>
+                                            <ul class="article-content px-3 pt-2">
+                                                <li class="article-annotation">Cinema & Spettacolo</li>
+                                                <a class="article-title" href="#">
+                                                    <h4>Festival Cinema Coreano un successo Fiorentino!</h4>
+                                                </a>
+                                                <li class="article-correlated">
+                                                    <a class="correlated-link" href="#">
+                                                        <b class="root" >Articolo /</b>
+                                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    </a>
+                                                </li>
+                                                <li class="article-description mt-2">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                </li>
+                                                <div class="article-correlated col-12">
+                                                    <a class="correlated-link mt-2" href="#">
+                                                        <b class="root" >Articolo /</b>
+                                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    </a>
+                                                    <a class="correlated-link mt-2" href="#">
+                                                        <b class="root" >Articolo /</b>
+                                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    </a>
+                                                </div>
+                                                <li class="fill-line col-12 mb-2 mt-4"></li>
+                                            </ul>
+                                        </article>
+                                        <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
+                                            <div class="row">
+                                                <div class="article-image col-12 col-md-6 py-2">
+                                                    <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                                </div>
+                                                <ul class="article-content col-12 col-md-6 px-3 pt-2">
+                                                    <li class="article-annotation">Cronaca</li>
+                                                    <a class="article-title" href="#"><h4>Il nuovo giornale di Doge è stato lanciato!</h4></a>
+                                                    <li class="article-description">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                    </li>
+                                                    <li class="article-author mt-2">
+                                                        di <author>Giovanni Giovannini</author>
+                                                    </li>
+                                                </ul>
+                                                <div class="article-correlated col-12">
+                                                    <a class="correlated-link mt-2" href="#">
+                                                        <b class="root" >Articolo /</b>
+                                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    </a>
+                                                    <a class="correlated-link mt-2" href="#">
+                                                        <b class="root" >Articolo /</b>
+                                                        Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    </a>
+                                                </div>
+                                                <li class="fill-line col-12 mb-2 mt-4"></li>
+                                            </div>
+                                        </article>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-0 col-md-4 d-none d-md-block">
+                            <div class="advertisement vertical mt-3">
+                                <img class="img-fluid" src="res/img/locandina.jpg"  />
+                            </div>
+                            <div class="vertical-articles-container">
+                                <h3 class="vertical-articles-title py-2">Più Letti</h3>
+
+                                <article class="article article-card col mt-3">
+                                    <div class="article-image-thin">
+                                        <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                    </div>
+                                    <ul class="article-content px-3 pt-2">
+                                        <li class="article-annotation">Sport</li>
+                                        <a class="article-title" href="#">
+                                            <h4>Il nuovo giornale di Doge è stato lanciato!</h4>
+                                        </a>
+                                        <li class="article-description mt-2">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                        </li>
+                                    </ul>
+                                </article>
+                                <article class="article article-card col mt-3">
+                                    <div class="article-image-thin">
+                                        <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                    </div>
+                                    <ul class="article-content px-3 pt-2">
+                                        <li class="article-annotation">Sport</li>
+                                        <a class="article-title" href="#">
+                                            <h4>Il nuovo giornale di Doge è stato lanciato!</h4>
+                                        </a>
+                                        <li class="article-description mt-2">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                        </li>
+                                    </ul>
+                                </article>
+                                <article class="article article-card col mt-3">
+                                    <div class="article-image-thin">
+                                        <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                    </div>
+                                    <ul class="article-content px-3 pt-2">
+                                        <li class="article-annotation">Sport</li>
+                                        <a class="article-title" href="#">
+                                            <h4>Il nuovo giornale di Doge è stato lanciato!</h4>
+                                        </a>
+                                        <li class="article-description mt-2">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                        </li>
+                                    </ul>
+                                </article>
+                            </div>
+                            <div class="advertisement vertical mt-3">
+                                <img class="img-fluid" src="res/img/locandina2.jpg"  />
+                            </div>
+                            <div class="vertical-articles-container">
+                                <h3 class="vertical-articles-title py-2">Cultura & Spettacolo</h3>
+
+                                <article class="article article-card col mt-3">
+                                    <div class="article-image-thin">
+                                        <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                    </div>
+                                    <ul class="article-content px-3 pt-2">
+                                        <li class="article-annotation">Sport</li>
+                                        <a class="article-title" href="#">
+                                            <h4>Il nuovo giornale di Doge è stato lanciato!</h4>
+                                        </a>
+                                        <li class="article-description mt-2">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                        </li>
+                                    </ul>
+                                </article>
+                                <article class="article article-card col mt-3">
+                                    <div class="article-image-thin">
+                                        <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                    </div>
+                                    <ul class="article-content px-3 pt-2">
+                                        <li class="article-annotation">Sport</li>
+                                        <a class="article-title" href="#">
+                                            <h4>Il nuovo giornale di Doge è stato lanciato!</h4>
+                                        </a>
+                                        <li class="article-description mt-2">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                        </li>
+                                    </ul>
+                                </article>
+                                <article class="article article-card col mt-3">
+                                    <div class="article-image-thin">
+                                        <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                    </div>
+                                    <ul class="article-content px-3 pt-2">
+                                        <li class="article-annotation">Sport</li>
+                                        <a class="article-title" href="#">
+                                            <h4>Il nuovo giornale di Doge è stato lanciato!</h4>
+                                        </a>
+                                        <li class="article-description mt-2">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                        </li>
+                                    </ul>
+                                </article>
+                            </div>
+                            <div class="advertisement vertical mt-3">
+                                <img class="img-fluid" src="res/img/locandina3.jpg"  />
+                            </div>
+                            <div class="vertical-articles-container">
+                                <h3 class="vertical-articles-title py-2">Sport</h3>
+
+                                <article class="article article-card col mt-3">
+                                    <div class="article-image-thin">
+                                        <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                    </div>
+                                    <ul class="article-content px-3 pt-2">
+                                        <li class="article-annotation">Sport</li>
+                                        <a class="article-title" href="#">
+                                            <h4>Il nuovo giornale di Doge è stato lanciato!</h4>
+                                        </a>
+                                        <li class="article-description mt-2">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                        </li>
+                                    </ul>
+                                </article>
+                                <article class="article article-card col mt-3">
+                                    <div class="article-image-thin">
+                                        <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                    </div>
+                                    <ul class="article-content px-3 pt-2">
+                                        <li class="article-annotation">Sport</li>
+                                        <a class="article-title" href="#">
+                                            <h4>Il nuovo giornale di Doge è stato lanciato!</h4>
+                                        </a>
+                                        <li class="article-description mt-2">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                        </li>
+                                    </ul>
+                                </article>
+                                <article class="article article-card col mt-3">
+                                    <div class="article-image-thin">
+                                        <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                    </div>
+                                    <ul class="article-content px-3 pt-2">
+                                        <li class="article-annotation">Sport</li>
+                                        <a class="article-title" href="#">
+                                            <h4>Il nuovo giornale di Doge è stato lanciato!</h4>
+                                        </a>
+                                        <li class="article-description mt-2">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                        </li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="advertisement p-0 d-none d-xl-flex col-xl-2 ">
+                <img class="img-fluid" src="res/img/tassoni-soda.jpg"  />
+            </aside>
+        </div>
+    </div>
+
+    <footer class="page-footer container-fluid m-0 pt-5 mt-3">
+        <div class="main-row row">
+            <div class="col-3"></div>
+            <div class="col-3">
+                <h2><a>il Resto del Carlino</a></h2>
+                <h6><b>Dambro SRL</b> società soggetta a direzione e coordinamento di <b>Lorenzif</b></h6>
+                <div class="associates">
+                    <a aria-label="lanazione logo" href="https://www.lanazione.it">
+                        <svg viewBox="0 0 390 42" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" class="Logo_logo--gray__huwdl Logo_logo--xs__KosC2"><path d="M0 35.802h5.151V7.211H0v-5.15h23.438v5.151h-6.439v28.591h7.435c3.556 0 6.439-3.576 6.439-7.984l.035-2.834h5.151v15.969H0v-5.152zM63.544 22.923L59.241 8.78l-4.618 14.143h8.921zm3.839 12.621l-2.586-8.499h-11.52l-2.774 8.499h6.421v5.152h-18.03v-5.152h4.73L55.121 1.857h12.878l10.248 33.687h4.76v5.152H61.56v-5.152h5.823zM178.902 22.923L174.599 8.78l-4.618 14.143h8.921zm3.84 12.621l-2.587-8.499h-11.519l-2.775 8.499h6.421v5.152h-18.03v-5.152h4.731l11.496-33.687h12.879l10.247 33.687h4.761v5.152h-21.447v-5.152h5.823zM124.014 35.544h5.545v5.151h-18.03v-5.151h5.898l.143-29.363h-6.041V1.03h18.906l14.295 26.788.143-21.637h-6.042V1.03h18.031v5.151h-5.561l.152 34.514h-12.622l-14.83-28.8.013 23.649zM254.745 35.544h5.884v5.151h-23.181v-5.151h6.812l.143-29.363h-6.955V1.03h24.057l.155 5.151-6.928-.034.013 29.397zM200.03 16.227l.069-15.196h35.134l.154 5.151-23.195 29.362h11.604c3.272 0 5.924-4.267 5.924-9.53v-1.803h5.152v11.333l.069 5.152h-34.842l-.069-7.985 21.706-26.529h-8.243c-4.081 0-7.489 3.398-8.31 7.931v2.114H200.03zM315.357 35.544h5.545v5.151h-18.03v-5.151h5.898l.143-29.363h-6.041V1.03h18.906l14.294 26.788.143-21.637h-6.041V1.03h18.031v5.151h-5.562l.153 34.514h-12.622l-14.831-28.8zM384.78 27.302l.069-2.37H390v15.249l-.069.515h-38.378v-5.152h6.811l.143-29.362h-6.954V1.03h33.296L390 .977v15.249h-5.151l-.069-2.833c0-3.472-2.125-6.392-5.004-7.228l-10.94-.019.006 11.694 4.346-.069c1.139 0 2.061-2.537 2.061-5.666h5.152v16.484h-5.152v-.257c0-2.463-.857-4.559-2.054-5.34h-4.351l.006 12.552h9.491c3.556 0 6.439-3.69 6.439-8.242z"></path><path d="M261.402 20.606C261.402 4.379 270.628 0 282.008 0c11.381 0 20.605 4.893 20.605 20.606 0 16.226-9.224 20.604-20.605 20.604-11.38 0-20.606-4.893-20.606-20.604zm12.364-.129c0-11.977 3.633-14.621 8.113-14.621 4.482 0 8.115 2.644 8.115 14.621 0 12.749-3.633 14.621-8.115 14.621-4.48 0-8.113-2.388-8.113-14.621z"></path>
+                        </svg>
+                    </a>
+                    <a aria-label="qn logo" href="https://www.quotidiano.net">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 605.78 45.96" class="Logo_logo--gray__huwdl Logo_logo--xs__KosC2"><path d="M301.27,24.45c0,6.27-2,8.9-5.7,8.9s-5.7-2.63-5.7-8.9V17.28c0-6.27,2.05-8.9,5.7-8.9s5.7,2.63,5.7,8.9Zm10.43-5C311.7,7.87,306.51,0,295.57,0s-16.13,7.87-16.13,19.46v2.81c0,11.59,5.18,19.46,16.13,19.46s16.13-7.87,16.13-19.46ZM253.78.7H244.3V41h9.28v-23h.26L266.9,41h7.74V.7h-9.22V21.83h-.25ZM223,12.29h.26L226.57,25h-7ZM217.36.7,206,41h9.35L217.42,33h11.2L230.73,41h10.18L229.52.7ZM192.46,41h10.11V.7H192.46Zm-35.71,0H171c11.65,0,16.64-7,16.64-19.08V19.78c0-12-5-19.08-16.64-19.08H156.75ZM166.86,33V8.77h3.26c4.74,0,7.23,2.17,7.23,8.64v6.91c0,6.47-2.49,8.64-7.23,8.64ZM140.81,41h10.11V.7H140.81ZM126,41V9H136.2V.7H105.86V9h10V41ZM93.77,24.45c0,6.27-2,8.9-5.7,8.9s-5.7-2.63-5.7-8.9V17.28c0-6.27,2-8.9,5.7-8.9s5.7,2.63,5.7,8.9Zm10.43-5C104.2,7.87,99,0,88.07,0S71.94,7.87,71.94,19.46v2.81c0,11.59,5.18,19.46,16.13,19.46s16.13-7.87,16.13-19.46ZM52.1,41.73c9.41,0,15.42-5.18,15.42-15.68V.7h-10V25.28c0,5-.84,8-5.38,8s-5.38-3-5.38-8V.7h-10V26.05c0,10.5,6,15.68,15.43,15.68M21.83,24.45c0,6.27-2,8.9-5.7,8.9s-5.7-2.63-5.7-8.9V17.28c0-6.27,2.05-8.9,5.7-8.9s5.7,2.63,5.7,8.9Zm10.43-5C32.26,7.87,27.07,0,16.13,0S0,7.87,0,19.46v2.81C0,32.71,4.22,40.13,13.06,41.48L16.19,46H26.31L22.4,40.71c6.66-2.56,9.86-9.35,9.86-18.44Z"></path><path d="M605.78,32.71H590.22v-8h11.53v-8.2H590.22V9h15.43V.7H580.3V41h25.48ZM550.48.7V41H575.7V32.71H560.59V.7ZM529.17,12.29h.25L532.75,25h-7ZM523.53.7,512.14,41h9.35L523.6,33h11.2L536.91,41h10.18L535.69.7ZM487.88.7h-9.47V41h9.28v-23H488L501,41h7.75V.7h-9.22V21.83h-.25Zm-24.7,23.75c0,6.27-2.05,8.9-5.7,8.9s-5.69-2.63-5.69-8.9V17.28c0-6.27,2-8.9,5.69-8.9s5.7,2.63,5.7,8.9Zm10.43-5C473.61,7.87,468.43,0,457.48,0s-16.13,7.87-16.13,19.46v2.81c0,11.59,5.19,19.46,16.13,19.46s16.13-7.87,16.13-19.46ZM426.44,41h10.11V.7H426.44Zm-21.25-8.32,16.07-24.2V.7H393.67V9h15.75L393.48,33.41V41H421.7V32.71ZM373.25,12.29h.26L376.84,25h-7ZM367.62.7,356.23,41h9.34L367.69,33h11.2L381,41h10.17L379.78.7ZM332,.7H322.5V41h9.28v-23H332l13.06,23h7.75V.7h-9.22V21.83h-.26Z"></path></svg>
+                    </a>
+                    <a aria-label="ilgiorno logo" href="https://www.ilgiorno.it">
+                        <svg viewBox="0 0 400 41" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" class="Logo_logo--gray__huwdl Logo_logo--xs__KosC2"><path d="M0 31.902h7.408V8.105H0V1.041h28.425v7.064h-6.373v23.797h6.373v7.063H0zM31.331 31.902h7.407V8.105h-7.407V1.041h28.425v7.064h-6.375v23.797l13.46-.047c4.567 0 8.269-4.088 8.269-9.13v-2.93h7.431v19.17H31.329v-7.063h.002zM158.591 31.902h7.408V8.105h-7.408V1.041h28.426v7.064h-6.375v23.797h6.375v7.063h-28.426z"></path><path d="M202.311 11.419c0-2.952 4.631-4.771 8.768-4.771 4.138 0 8.379 1.819 8.379 4.771v17.597c0 2.563-5.424 4.771-8.379 4.771-4.136 0-8.768-1.787-8.768-4.771V11.419zm-15.404 8.798c0-9.844 9.526-20.021 24.172-20.021 15.251 0 24.173 11.027 24.173 20.021 0 9.876-9.136 20.023-24.173 20.023-15.283-.001-24.172-10.359-24.172-20.023zM104.831 20.217c0-9.844 9.526-20.217 24.172-20.217 5.984 0 13.409 1.857 18.876 4.552V1.047h7.616l.017 11.238h-18.13v-.866c0-2.952-4.241-4.771-8.379-4.771-4.137 0-8.769 1.819-8.769 4.771v17.597c0 2.984 4.632 4.771 8.769 4.771 2.954 0 8.379-2.208 8.379-4.771l.195-2.104h-4.117v-6.57l25.653-.125-.013 6.907h-4.438v12.088h-7.419v-3.314c-5.282 2.736-11.764 4.342-18.24 4.342-15.282-.001-24.172-10.359-24.172-20.023zM266.902 8.105h-8.868v12.886h8.728c2.607 0 5.905-3.102 5.788-6.783-.103-3.252-2.518-5.671-5.648-6.103zm12.908 16.79l5.039 7.007h3.393v7.064h-15.158l-7.416-11.417h-7.635v4.353h6.374v7.064h-28.425v-7.064h7.407V8.105h-7.407V1.041l41.448.006c6.496.089 11.682 5.18 11.887 11.675a12.041 12.041 0 01-9.507 12.173zM291.11 31.902h7.409V8.105h-7.409V1.041h21.42l24.808 22.193V8.105h-7.213V1.041h22.786v7.064h-6.817v30.894l-12.623-.034-26.392-22.144v15.081h6.817v7.063H291.11zM367.057 11.419c0-2.952 4.631-4.771 8.77-4.771 4.136 0 8.378 1.819 8.378 4.771v17.597c0 2.563-5.425 4.771-8.378 4.771-4.138 0-8.77-1.787-8.77-4.771V11.419zm-15.403 8.798c0-9.844 9.525-20.021 24.173-20.021C391.076.196 400 11.223 400 20.217c0 9.876-9.136 20.023-24.173 20.023-15.285-.001-24.173-10.359-24.173-20.023z"></path>
+                        </svg>
+                    </a>
+                    <a aria-label="iltelegrafo logo" href="https://www.iltelegrafolivorno.it">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610 60" fill-rule="evenodd" class="Logo_logo--gray__huwdl Logo_logo--xs__KosC2"><g><path d="M28 9.2h-2.5c-3.8 0-4.2.7-4.2 4.2v27.3c0 3.6.4 4.3 4.2 4.3H28v7.1H-1.7V45H.8c3.7 0 4.2-.8 4.2-4.3V13.4C5 9.8 4.6 9.2.8 9.2h-2.5V2.1H28v7.1zM60.8 9.2H58c-3.9 0-4 .8-4 3.9v31.8h3.3c4.6 0 7.7-.2 9.6-2.3 2.1-2.2 2.8-5.9 3.2-11.4h7.7v20.9h-47V45h2.5c3.8 0 4.1-.8 4.1-4.3V13.4c0-3.6-.3-4.2-4.1-4.2h-2.5V2.1h30.1c-.1 0-.1 7.1-.1 7.1zM114 20.8v.2h-7.4V2.1h52.6V21H152v-.3c0-7.2-3.2-10.9-8.6-10.9h-2.2v30.8c0 3.6.4 4.3 4.2 4.3h4.2V52h-32.9v-7h3.9c4.1 0 4.1-1 4.1-4.3V9.9h-2.2c-5.4 0-8.5 3.8-8.5 10.9M214.4 20.7h-7.9c-.9-4.2-1.8-7.1-3.8-8.9-2.5-2.5-5.7-2.6-10.1-2.6h-7.9v13.7h1.9c4.6 0 6.1-2 6.1-7.5V15h6.2v22.8h-6.2c-.2-6.3-1-8.3-6.1-8.3h-2V45h8.9c5 0 8.2-.2 10.1-2.7 1.8-2.5 2.5-6.1 2.7-10.8h8.2v20.6h-52.8V45h2.5c3.9 0 4-.9 4-3.9V13.4c0-3.6-.3-4.2-4.1-4.2h-2.5V2.1h52.5v18.6h.3zM248.6 9.2h-2.8c-3.9 0-4 .8-4 3.9v31.8h3.3c4.6 0 7.7-.2 9.6-2.3 2.1-2.2 2.8-5.9 3.2-11.4h7.7v20.9h-47.1V45h2.5c3.8 0 4.1-.8 4.1-4.3V13.4c0-3.6-.3-4.2-4.1-4.2h-2.5V2.1h30.1v7.1zM322.5 20.7h-7.9c-.9-4.2-1.8-7.1-3.8-8.9-2.5-2.5-5.7-2.6-10.1-2.6h-7.9v13.7h1.9c4.6 0 6.1-2 6.1-7.5V15h6.2v22.8h-6.2c-.2-6.3-1-8.3-6.1-8.3h-2V45h8.9c5 0 8.2-.2 10.1-2.7 1.8-2.5 2.5-6.1 2.7-10.8h8.2v20.6H270V45h2.5c3.9 0 4-.9 4-3.9V13.4c0-3.6-.3-4.2-4.1-4.2H270V2.1h52.5v18.6zM355.1 25.5h27.6v7.1H381c-4 0-4.1.8-4.1 4.2v15.8h-9.1l-1.7-3.1c-4.9 2.7-9.8 4.2-14.8 4.2-15.3 0-25-9.8-25-26.7 0-15.9 10.3-26.7 26.1-26.7 5.3 0 9.7 1.1 13.4 3.6l1.2-2.7h8v20.6h-8.7c-1.7-9.3-4.8-13.7-11-13.7-7.1 0-9.7 6.1-9.7 18.8 0 12.8 2.6 19 9.6 19 4.9 0 5.6-1.4 5.6-5.3v-3.8c0-3.6-.4-4.2-4.2-4.2H355l.1-7.1zM468.2 44.5h2.3c2.9 0 4.1 0 4.1-1.5 0-.7-.1-1.4-.3-2.2l-1.8-5.3H459l-1.6 4.7c-.4 1.1-.7 1.9-.7 2.8 0 .9 1.2 1.4 3.5 1.4h2.5v7.1h-22.5v-7.1h1.8c2.7 0 4.2-1.8 5.4-5.2l13.2-37.8h18.2L490.7 39c1.2 3.9 1.8 5.3 5.3 5.3h2.6v7.1h-30.3l-.1-6.9zm-2.7-31.3-4.2 15.2h8.8l-4.6-15.2zM550.3 22h-8.2c-.3-4.4-.8-7.6-2.4-10-2.3-3.4-5.7-3.4-11.1-3.4h-6.4v13.7h1.9c4.6 0 6.1-2 6.1-7.5v-.4h6.2v22.8h-6.2c-.2-6.3-1-8.3-6.1-8.3h-2v11.2c0 3.3 0 4.3 4.1 4.3h2.7v7.1h-29.7v-7.1h2.5c3.9 0 4-.9 4-3.9V12.8c0-3.6-.3-4.2-4.1-4.2h-2.5V1.5H550V22h.3zM581.4 0c18.2 0 28.9 10.2 28.9 26.6s-10.7 26.5-29.1 26.5c-18.2 0-28.9-10.2-28.9-26.5C552.3 10.2 563 0 581.4 0m-9.8 26.4c0 12.8 2.6 19 9.6 19s9.7-6.1 9.7-18.8c0-12.8-2.7-19-9.6-19-6.9 0-9.7 6.2-9.7 18.8M436.7 44.5c-3.7 0-4.1-1.3-5.3-5.3l-3.6-9c4.1-3 8.1-8 8.1-12.2 0-6.1-3.6-15.9-18.1-15.9h-34.5v7.1h2.5c3.8 0 4.1.7 4.1 4.2v27.3c0 3.6-.3 4.3-4.1 4.3h-2.5v7.1h30.2V45h-2.8c-3.8 0-4.1-.8-4.1-4.3v-8.6s9-.2 4.5 0h1.5l6.7 19.5 20.1-.1v-7.1l-2.7.1zm-30.2-21.8V9.5h4.9c5.5 0 7.8 1.6 7.8 6.8 0 4.9-2.6 6.4-8.3 6.4h-4.4z"></path></g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="col-3 container-fluid footer-content-container m-0 p-0">
+                <div class="grid-content row row-cols-3">
+                    <h6 class="footer-list-title col">Categorie</h6>
+                    <h6 class="footer-list-title col">Abbonamenti</h6>
+                    <h6 class="footer-list-title col">Pubblicità</h6>
+                    <h6 class="col">Contatti</h6>
+                    <h6 class="col">Digitale</h6>
+                    <h6 class="col">Speed Adv</h6>
+
+                    <h6 class="col">Lavora Con Noi</h6>
+                    <h6 class="col">Cartaceo</h6>
+                    <h6 class="col">Network</h6>
+
+                    <h6 class="col">Concorsi</h6>
+                    <h6 class="col">Offerte Promozionali</h6>
+                    <h6 class="col">Annunci</h6>
+
+                    <h6 class="col">Aste E Gare</h6>
+                </div>
+            </div>
+            <div class="col-3"></div>
+            <div class="col-3 footer-darker"></div>
+            <div class="col-3 footer-darker">
+                copiright 2023 P. Iva 12345678910
+            </div>
+            <div class="footer-extra col-3 footer-darker">
+                <a>dati societari</a>
+                <a>ISSN</a>
+                <a>Privacy</a>
+                <a>Impostazione Privacy</a>
+            </div>
+            <div class="col-3 footer-darker"></div>
+        </div>
+    </footer>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="scripts/main_script.js"/>
+</body>
+</html>

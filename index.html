@@ -1043,10 +1043,10 @@
         </div>
     </div>
 
-    <footer class="page-footer container-fluid m-0 pt-5 mt-3">
+    <footer class="page-footer container-fluid m-0 pt-5 mt-3 px-auto">
         <div class="main-row row">
-            <div class="col-3"></div>
-            <div class="col-3">
+            <div class="col-3 d-none d-md-block"></div>
+            <div class="col-12 col-md-3 pb-5 pb-md-0 px-5 px-md-0 ">
                 <h2><a>il Resto del Carlino</a></h2>
                 <h6><b>Dambro SRL</b> società soggetta a direzione e coordinamento di <b>Lorenzif</b></h6>
                 <div class="associates">
@@ -1067,38 +1067,82 @@
                     </a>
                 </div>
             </div>
-            <div class="col-3 container-fluid footer-content-container m-0 p-0">
-                <div class="grid-content row row-cols-3">
-                    <h6 class="footer-list-title col">Categorie</h6>
-                    <h6 class="footer-list-title col">Abbonamenti</h6>
-                    <h6 class="footer-list-title col">Pubblicità</h6>
-                    <h6 class="col">Contatti</h6>
-                    <h6 class="col">Digitale</h6>
-                    <h6 class="col">Speed Adv</h6>
+            <div class="col-12 col-md-3 container-fluid footer-content-container px-5 px-md-0 pb-5">
+                <div class="grid-content row row-cols-3 d-none d-md-block">
+                    <h6 class="footer-list-title col"><a href="#">Categorie</a></h6>
+                    <h6 class="footer-list-title col"><a href="#">Abbonamenti</a></h6>
+                    <h6 class="footer-list-title col"><a href="#">Pubblicità</a></h6>
+                    <h6 class="col"><a href="#">Contatti</a></h6>
+                    <h6 class="col"><a href="#">Digitale</a></h6>
+                    <h6 class="col"><a href="#">Speed Adv</a></h6>
 
-                    <h6 class="col">Lavora Con Noi</h6>
-                    <h6 class="col">Cartaceo</h6>
-                    <h6 class="col">Network</h6>
+                    <h6 class="col"><a href="#">Lavora Con Noi</a></h6>
+                    <h6 class="col"><a href="#">Cartaceo</a></h6>
+                    <h6 class="col"><a href="#">Network</a></h6>
 
-                    <h6 class="col">Concorsi</h6>
-                    <h6 class="col">Offerte Promozionali</h6>
-                    <h6 class="col">Annunci</h6>
+                    <h6 class="col"><a href="#">Concorsi</a></h6>
+                    <h6 class="col"><a href="#">Offerte Promozionali</a></h6>
+                    <h6 class="col"><a href="#">Annunci</a></h6>
 
-                    <h6 class="col">Aste E Gare</h6>
+                    <h6 class="col"><a href="#">Aste E Gare</a></h6>
+                </div>
+                <div class="accordion d-block d-md-none accordion-flush" id="ExtraAccordion">
+                    <div class="accordion-item footer-bg">
+                        <div class="accordion-header" id="headingOne">
+                            <button class="accordion-button footer-bg collapsed px-1 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h6 class="footer-list-title">Categorie</h6>
+                            </button>
+                        </div>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#ExtraAccordion">
+                            <div class="accordion-body px-1 py-2">
+                                <h6 class="col"><a href="#">Contatti</a></h6>
+                                <h6 class="col"><a href="#">Digitale</a></h6>
+                                <h6 class="col"><a href="#">Speed Adv</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item footer-bg">
+                        <div class="accordion-header" id="headingTwo">
+                            <button class="accordion-button footer-bg collapsed px-1 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h6 class="footer-list-title">Abbonamenti</h6>
+                            </button>
+                        </div>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#ExtraAccordion">
+                            <div class="accordion-body px-1 py-2">
+                                <h6 class="col"><a href="#">Lavora Con Noi</a></h6>
+                                <h6 class="col"><a href="#">Cartaceo</a></h6>
+                                <h6 class="col"><a href="#">Network</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item footer-bg">
+                        <div class="accordion-header" id="headingThree">
+                            <button class="accordion-button footer-bg collapsed px-1 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h6 class="footer-list-title">Pubblicità</h6>
+                            </button>
+                        </div>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#ExtraAccordion">
+                            <div class="accordion-body px-1 py-2">
+                                <h6 class="col"><a href="#">Concorsi</a></h6>
+                                <h6 class="col"><a href="#">Offerte Promozionali</a></h6>
+                                <h6 class="col"><a href="#">Annunci</a></h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-3"></div>
-            <div class="col-3 footer-darker"></div>
-            <div class="col-3 footer-darker">
-                copiright 2023 P. Iva 12345678910
+            <div class="col-3 d-none d-md-block"></div>
+            <div class="col-3 footer-darker d-none d-md-block"></div>
+            <div class="col-12 col-md-3 footer-darker">
+                Copiright 2023 P. Iva 12345678910
             </div>
-            <div class="footer-extra col-3 footer-darker">
+            <div class="footer-extra col-12 col-md-3 footer-darker">
                 <a>dati societari</a>
                 <a>ISSN</a>
                 <a>Privacy</a>
                 <a>Impostazione Privacy</a>
             </div>
-            <div class="col-3 footer-darker"></div>
+            <div class="col-3 footer-darker d-none d-md-block"></div>
         </div>
     </footer>
 </div>

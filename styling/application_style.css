@@ -617,7 +617,6 @@ footer.page-footer{
 }
 .page-footer .main-row{
     justify-content: center;
-    row-gap: 3rem;
 }
 .page-footer .associates{
     display: flex;
@@ -644,7 +643,21 @@ footer.page-footer{
     text-align: start;
     font-size: .7rem
 }
+.page-footer h2 a {
+    font-size: 1.5rem;
+    font-weight:550;
+}
+.page-footer .accordion-header h6{
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+.page-footer .accordion-body h6 a{
+    font-size: 1.0rem;
+    font-weight: 550;
+}
 .footer-darker{
+    display:flex;
+    justify-content:center;
     padding-bottom: .5rem;
     padding-top: .5rem;
     background-color: var(--color-primary-bg-dark)
@@ -653,6 +666,21 @@ footer.page-footer{
     text-transform: uppercase;
     font-weight: 600;
     color: var(--color-title-text);
+}
+
+.page-footer .accordion,
+.page-footer .accordion .accordion-header {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+}
+.page-footer .accordion-button:not(.collapsed){
+    color:var(--color-white-text);
+}
+
+.footer-bg {
+    background-color: var(--color-primary-bg) !important;
 }
 /*Extra__________________________________________________________________*/
 

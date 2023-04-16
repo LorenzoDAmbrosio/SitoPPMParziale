@@ -17,7 +17,7 @@
 }
 
 *{
-    font-family: "Arial Nova";
+    font-family: "Arial";
     font-weight: normal;
     color: var(--color-default-text);
 }
@@ -368,10 +368,20 @@ ul.toolbar.sections .section-content{
     text-decoration: none !important;
     color: var(--color-primary-text) !important;
 }
+.section-content.dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width:auto;
+}
+.dropdown-menu a.nav-section{
+    text-align: start;
+    white-space:nowrap;
+}
 
-content-navigation.content-nav ul.toolbar.hot-topics{
+.content-nav ul.toolbar.hot-topics {
     justify-content: center;
-    gap:1rem;
+    gap: 1rem;
 }
 .content-nav ul.toolbar.hot-topics li a{
     color: var(--color-primary-text) !important;
@@ -574,7 +584,7 @@ article.article .article-image-thin img{
 .article-description{
     text-align: start;
     line-height: 1rem;
-    max-height: 4rem;
+    max-height: 4.1rem;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -619,11 +629,20 @@ footer.page-footer{
     flex-direction: row;
     gap: 1rem;
 }
-.footer-content-container .grid-content,
+.footer-extra a{
+    flex-wrap: wrap;
+    display:flex;
+    align-content:center;
+}
 .footer-content-container .grid-content{
     row-gap: .7rem;
     justify-content: end;
     gap:0 !important;
+}
+.page-footer div h6,
+.page-footer div a {
+    text-align: start;
+    font-size: .7rem
 }
 .footer-darker{
     padding-bottom: .5rem;

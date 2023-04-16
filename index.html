@@ -7,7 +7,7 @@
     <title>Il Resto del Doge</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <title>Bootstrap Example</title>
+    <title>Il resto del Bassotto</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styling/application_style.css">
 </head>
@@ -200,7 +200,21 @@
                                 <li class="nav-section"><a href="#">Politica</a></li>
                                 <li class="nav-section"><a href="#">Economia</a></li>
                                 <li class="nav-section"><a href="#">Cultura & Spettacolo</a></li>
-                                <li class="nav-section"><a href="#">Speciali</a></li>
+                                <li class="nav-section dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" id="special-dropdown" data-bs-toggle="dropdown" aria-expanded="false">Speciali</a>
+                                    <div class="dropdown-menu px-2" aria-labelledby="special-dropdown">
+                                        <a class="nav-section" href="#">QN Mobilità</a>
+                                        <a class="nav-section" href="#">Top Aziende</a>
+                                        <a class="nav-section" href="#">Cronisti in Classe</a>
+                                        <a class="nav-section" href="#">Premio Mascagni</a>
+                                        <a class="nav-section" href="#">Top 500 Bologna</a>
+                                        <a class="nav-section" href="#">Top 500 Romagna</a>
+                                        <a class="nav-section" href="#">Alfasigma</a>
+                                        <a class="nav-section" href="#">Distretti</a>
+                                        <a class="nav-section" href="#">Podcast</a>
+                                        <a class="nav-section" href="#">Teatri in regione</a>
+                                    </div>
+                                </li>                           
                             </ul>
                         </ul>
                         <ul class="nav-detail center px-2 py-1 d-flex d-md-flex d-lg-none">
@@ -249,10 +263,12 @@
                         <li><a href="#"><i class="bi bi-search"></i></a></li>
                     </ul>
                     <ul class="nav-detail center px-2 py-1">
-                        <li class="city-sections my-2 pe-2 me-2"><a href="#">
-                            <i class="bi bi-geo-alt-fill"></i>
-                            Città
-                        </a></li>
+                        <li class="city-sections my-2 pe-2 me-2">
+                            <a href="#">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                Città
+                            </a>
+                        </li>
                         <ul class="mobile-slider-nav py-2">
                             <li class=""><a href="#">Cronaca</a></li>
                             <li class=""><a href="#">Sport</a></li>
@@ -260,7 +276,14 @@
                             <li class=""><a href="#">Politica</a></li>
                             <li class=""><a href="#">Economia</a></li>
                             <li class=""><a href="#">Cultura & Spettacolo</a></li>
-                            <li class=""><a href="#">Speciali</a></li>
+                            <li class="dropdown show">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Speciali</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
                         </ul>
                     </ul>
                     <ul class="nav-detail footer mobile-slider-nav p-2">
@@ -301,7 +324,7 @@
                                 </li>
                             </ul>
                             <div class="article-image col-12 col-md-6 order-0 order-md-1 ">
-                                <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                <img src="res/img/filler1.png" class="img-fluid" alt="dogee">
                             </div>
                         </div>
                     </article>
@@ -313,39 +336,49 @@
                                 <div class="row row-cols-1 row-cols-md-2">
                                     <article class="article article-card col mt-3">
                                         <div class="article-image">
-                                            <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                            <img src="res/img/filler1.png" class="img-fluid" alt="Ciclismo">
                                         </div>
                                         <ul class="article-content px-3 pt-2">
-                                            <li class="article-annotation">Cosenza</li>
+                                            <li class="article-annotation">Sport</li>
                                             <a class="article-title" href="#">
-                                                <h4>Il nuovo giornale di Doge è stato lanciato!</h4>
+                                                <h4>Il ciclista italiano Mario Rossi vince la tappa del Giro d'Italia</h4>
                                             </a>
                                             <li class="article-correlated">
                                                 <a class="correlated-link" href="#">
-                                                    <b class="root" >Articolo /</b>
-                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    <b class="root">Articolo /</b>
+                                                    Scopri la strategia vincente di Rossi per la tappa odierna del Giro d'Italia!
                                                 </a>
                                             </li>
                                             <li class="article-description mt-2">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                Milano, 15 Aprile 2023 - Il ciclista italiano Mario Rossi ha conquistato la vittoria nella tappa odierna del Giro d'Italia, che si è svolta tra le città di Milano e Bologna. Rossi, che corre per la squadra nazionale italiana, ha vinto la corsa in solitaria, guadagnando un vantaggio di oltre un minuto sui suoi rivali più vicini.
+                                                La vittoria di Rossi rappresenta una grande soddisfazione per il ciclismo italiano, che ha visto il suo sport vivere momenti difficili negli ultimi anni a causa di scandali di doping e altre controversie.
+                                                Rossi, intervistato alla fine della gara, ha dichiarato di essere molto felice della sua prestazione e di aver lavorato duramente per ottenere questo risultato. "Sapevo che questa tappa sarebbe stata difficile, ma ho fatto del mio meglio e sono felice di aver vinto", ha detto Rossi.
+                                                La tappa odierna del Giro d'Italia ha visto la partecipazione di molti dei migliori ciclisti al mondo, tra cui il campione in carica Chris Froome e il vincitore di tre edizioni del Tour de France, Alberto Contador. Tuttavia, Rossi è stato in grado di tenere testa a tutti loro e di vincere la tappa con una grande prestazione.
+                                                La prossima tappa del Giro d'Italia si svolgerà domani, con una corsa tra le città di Bologna e Firenze. Rossi si è detto fiducioso di poter fare bene anche in questa tappa e di continuare a lottare per la vittoria finale.
                                             </li>
                                         </ul>
                                     </article>
                                     <article class="article article-card col mt-3">
                                         <div class="article-image">
-                                            <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                            <img src="res/img/filler1.png" class="img-fluid" alt="Cinema">
                                         </div>
                                         <ul class="article-content px-3 pt-2">
-                                            <li class="article-annotation">Cosenza</li>
-                                            <a class="article-title" href="#"><h4>Il nuovo giornale di Doge è stato lanciato!</h4></a>
+                                            <li class="article-annotation">Cinema</li>
+                                            <a class="article-title" href="#">
+                                                <h4>Il film "La grande bellezza" conquista il premio come miglior film straniero</h4>
+                                            </a>
                                             <li class="article-correlated">
                                                 <a class="correlated-link" href="#">
-                                                    <b class="root" >Articolo /</b>
-                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    <b class="root">Articolo /</b>
+                                                    Scopri tutti i dettagli sulla cerimonia di premiazione degli Oscar 2023!
                                                 </a>
                                             </li>
                                             <li class="article-description mt-2">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                Los Angeles, 15 Aprile 2023 - Il film italiano "La grande bellezza", diretto da Paolo Sorrentino, ha vinto il premio come miglior film straniero alla cerimonia degli Oscar 2023. Il film, che racconta la storia di un giornalista che vive a Roma, ha ricevuto elogi da parte della critica internazionale per la sua visione poetica e malinconica della città eterna.
+                                                Sorrentino, che aveva già vinto un Oscar nel 2014 per il suo film "La grande bellezza", ha ringraziato il pubblico americano per il premio e ha dedicato il riconoscimento alla città di Roma. "Questo premio è per tutti coloro che amano Roma e per tutti coloro che credono nella bellezza della vita", ha detto Sorrentino.
+                                                "La grande bellezza" è stato il film italiano più apprezzato dell'anno, con una serie di nomination e premi ricevuti in vari festival cinematografici in tutto il mondo. Il film ha ricevuto anche il premio come miglior film straniero ai Golden Globe 2023.
+                                                Altri premi importanti assegnati nella serata sono stati il premio come miglior attore a Leonardo DiCaprio per il suo ruolo nel film "The Revenant" e il premio come miglior attrice a Cate Blanchett per il suo ruolo in "Carol". Il premio come miglior film è stato assegnato a "The Revenant", diretto da Alejandro G. Iñárritu.
+                                                La cerimonia degli Oscar 2023 ha visto la partecipazione di molte star del cinema, tra cui George Clooney, Brad Pitt, Angelina Jolie e Meryl Streep. La cerimonia è stata presentata dal comico americano Jimmy Kimmel, che ha fatto ridere il pubblico con una serie di battute e sketch comici.
                                             </li>
                                         </ul>
                                     </article>
@@ -356,34 +389,40 @@
                         <div class="col-0 col-md-4 d-none d-md-block">
                             <article class="article article-mini col">
                                 <ul class="article-content px-3 pt-2">
-                                    <li class="article-annotation">Domodossola</li>
+                                    <li class="article-annotation">Economia</li>
                                     <a class="article-title" href="#">
-                                        <h4>Il nuovo giornale di Doge è stato lanciato!</h4>
+                                        <h4>La tecnologia al servizio del business: l'evoluzione delle criptovalute</h4>
                                     </a>
                                     <li class="article-description mt-2">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                        Le criptovalute rappresentano un tema caldo per chiunque sia interessato al mondo del business e della finanza. Le valute digitali hanno aperto la strada a un'ampia gamma di opportunità per i commercianti, gli investitori e i consumatori di tutto il mondo. Il loro utilizzo è in costante crescita e si stima che la loro capitalizzazione di mercato sia destinata a superare i 2 trilioni di dollari entro la fine dell'anno.
+                                        Ma cosa sono le criptovalute? In poche parole, sono valute digitali basate su tecnologia blockchain. Il loro valore deriva dall'offerta e dalla domanda del mercato e il loro utilizzo sta diventando sempre più popolare tra le aziende e i consumatori.
+                                        L'evoluzione delle criptovalute ha portato alla creazione di numerose valute alternative, ciascuna con le proprie caratteristiche uniche. Bitcoin, Ethereum e Ripple sono solo alcune delle valute digitali più popolari disponibili sul mercato.
+                                        Inoltre, la tecnologia blockchain utilizzata dalle criptovalute può essere applicata in numerosi settori, tra cui l'agricoltura, l'immobiliare e il turismo. L'utilizzo della tecnologia blockchain può portare a una maggiore trasparenza, efficienza e sicurezza in vari settori, apportando notevoli vantaggi per le aziende e i consumatori.
                                     </li>
                                     <li class="article-author mt-2">
-                                        di <author>Giovanni Giovannini</author>
+                                        di <author>Nome Cognome</author>
                                     </li>
                                 </ul>
                             </article>
                             <article class="article article-mini col">
                                 <ul class="article-content px-3 pt-2">
-                                    <li class="article-annotation">Lastra a Signa</li>
+                                    <li class="article-annotation">Ambiente</li>
                                     <a class="article-title" href="#">
-                                        <h4>Il nuovo giornale di Doge è stato lanciato!</h4>
+                                        <h4>La sfida per la plastica biodegradabile: una soluzione per l'ambiente?</h4>
                                     </a>
                                     <li class="article-description mt-2">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                        L'inquinamento da plastica è un problema globale che ha un impatto devastante sull'ambiente. Miliardi di tonnellate di plastica vengono prodotte ogni anno e gran parte di essa finisce in mare, causando danni irreparabili agli ecosistemi marini.
+                                        Ma cosa succederebbe se fosse possibile produrre plastica biodegradabile? La ricerca scientifica sta lavorando attivamente per trovare soluzioni sostenibili per ridurre l'inquinamento da plastica. La plastica biodegradabile è una di queste soluzioni, ma come funziona esattamente?
+                                        La plastica biodegradabile è prodotta utilizzando materiali naturali come l'amido di mais e l'amido di patate. Questi materiali sono biodegradabili, il che significa che possono essere decomposti da microrganismi naturali senza causare danni all'ambiente.
+                                        Tuttavia, non tutti i tipi di plastica biodegradabile sono uguali. Alcune possono impiegare mesi o addirittura anni per decomporre, mentre altre possono richiedere condizioni specifiche per poter essere degradate.
+                                        Inoltre, la produzione di plastica biodegradabile può essere costosa e richiedere molte risorse. Ciò significa che è ancora una sfida produrre plastica biodegradabile in modo economico e sostenibile su larga scala.
                                     </li>
                                     <li class="article-author mt-2">
-                                        di <author>Marco Marconi</author>
+                                        di <author>Nome Cognome</author>
                                     </li>
                                 </ul>
                             </article>
                         </div>
-
                         <li class="fill-line col-12 mt-5"></li>
 
                         <article class="article article-inline container-fluid col-12 my-2">
@@ -396,7 +435,7 @@
                                     </li>
                                 </ul>
                                 <div class="article-image col-12 col-md-4 order-0 order-md-1 py-2">
-                                    <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                    <img src="res/img/filler1.png" class="img-fluid" alt="dogee">
                                 </div>
                             </div>
                         </article>
@@ -408,65 +447,74 @@
                                 <div class="row row-cols-1 row-cols-md-2">
                                     <article class="article article-card col mt-3">
                                         <div class="article-image">
-                                            <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                            <img src="res/img/filler1.png" class="img-fluid" alt="tecnologia sul lavoro">
                                         </div>
                                         <ul class="article-content px-3 pt-2">
-                                            <li class="article-annotation">Sport</li>
+                                            <li class="article-annotation">Tecnologia</li>
                                             <a class="article-title" href="#">
-                                                <h4>Il nuovo giornale di Doge è stato lanciato!</h4>
+                                                <h4>L'impatto della tecnologia sul nostro lavoro</h4>
                                             </a>
                                             <li class="article-correlated">
                                                 <a class="correlated-link" href="#">
-                                                    <b class="root" >Articolo /</b>
-                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    <b class="root">Articolo /</b>
+                                                    Scopri come l'Intelligenza Artificiale sta cambiando il mondo del lavoro!
                                                 </a>
                                             </li>
                                             <li class="article-description mt-2">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                L'avvento della tecnologia ha portato notevoli cambiamenti nel mondo del lavoro, cambiamenti che stanno influenzando ogni settore. Se da una parte le innovazioni tecnologiche hanno creato nuove opportunità di lavoro, dall'altra hanno messo in discussione la stessa esistenza di alcune professioni. La domanda che tutti si pongono è: come evolverà il mondo del lavoro con l'Intelligenza Artificiale?
+                                                Gli studi sul futuro del lavoro non sono unanimi e le previsioni variano notevolmente a seconda degli studiosi. Secondo alcune stime, entro il 2030 l'Intelligenza Artificiale potrebbe sostituire il 40% dei lavori esistenti. Altre analisi, invece, prevedono una creazione di nuovi posti di lavoro in settori come la robotica, la cyber security e la gestione dei dati.
+                                                Ciò che è certo, comunque, è che l'Intelligenza Artificiale sta già rivoluzionando il modo in cui lavoriamo. Dalle automazioni alle chatbot, le tecnologie basate sull'IA stanno diventando sempre più presenti nel nostro quotidiano lavorativo, rendendo obsoleti alcuni compiti ripetitivi e permettendo una maggiore efficienza nelle attività lavorative.
+                                                Tuttavia, non tutto è rose e fiori. L'introduzione di tecnologie avanzate può causare un aumento della disoccupazione e la creazione di nuove forme di povertà e disuguaglianza. Per questo motivo, è importante che le aziende e le istituzioni governative si impegnino per una transizione equa e giusta verso un futuro in cui l'Intelligenza Artificiale sarà sempre più presente.
                                             </li>
                                         </ul>
                                     </article>
                                     <article class="article article-card col mt-3">
                                         <div class="article-image">
-                                            <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                            <img src="res/img/filler1.png" class="img-fluid" alt="ristorante-vegano">
                                         </div>
                                         <ul class="article-content px-3 pt-2">
-                                            <li class="article-annotation">Catanzaro Lido</li>
-                                            <a class="article-title" href="#"><h4>Il nuovo giornale di Doge è stato lanciato!</h4></a>
+                                            <li class="article-annotation">Cucina</li>
+                                            <a class="article-title" href="#">
+                                                <h4>Il nuovo ristorante vegano a Bologna: "La Foglia Verde"!</h4>
+                                            </a>
                                             <li class="article-correlated">
                                                 <a class="correlated-link" href="#">
-                                                    <b class="root" >Articolo /</b>
-                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    <b class="root">Articolo /</b>
+                                                    Scopri gli altri ristoranti vegani a Bologna!
                                                 </a>
                                             </li>
                                             <li class="article-description mt-2">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                Se sei alla ricerca di un ristorante che serva deliziose pietanze vegane a Bologna, non perderti il nuovo "La Foglia Verde"! Situato nel cuore della città, questo ristorante offre una vasta selezione di piatti a base di ingredienti freschi e naturali, provenienti da coltivazioni biologiche locali.
+                                                Tra le specialità della casa, troverai le polpette vegane di lenticchie, le lasagne di verdure e il tofu alla griglia con verdure. Non mancano inoltre le insalate miste e i dolci vegani, come la crostata di mele senza glutine.
+                                                Il ristorante è accogliente e luminoso, con arredi moderni e minimalisti. Il personale è sempre disponibile e cordiale, pronto a soddisfare ogni tua richiesta e a consigliarti i piatti migliori.
+                                                Se sei alla ricerca di un'esperienza culinaria sana e gustosa, non puoi perderti "La Foglia Verde"!
                                             </li>
                                         </ul>
                                     </article>
                                     <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
                                         <div class="row">
                                             <div class="article-image col-12 col-md-6 py-2">
-                                                <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                                <img src="res/img/filler1.png" class="img-fluid" alt="Resto del Carlino">
                                             </div>
                                             <ul class="article-content col-12 col-md-6 px-3 pt-2">
-                                                <li class="article-annotation">Cronaca</li>
-                                                <a class="article-title" href="#"><h4>Il nuovo giornale di Doge è stato lanciato!</h4></a>
+                                                <li class="article-annotation">Politica</li>
+                                                <a class="article-title" href="#"><h4>Crisi di governo: cosa sta succedendo nel Parlamento italiano?</h4></a>
                                                 <li class="article-description">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                    La situazione politica in Italia è molto delicata in questo momento, con la crisi di governo che continua a tenere banco nel dibattito pubblico. Le tensioni tra le diverse fazioni politiche si sono acuite negli ultimi giorni, con le dimissioni del Presidente del Consiglio che sembrano ormai imminenti.
+                                                    Nonostante ci siano ancora molti interrogativi sul futuro del Paese, sembra che si stia lavorando per trovare una soluzione alla crisi. Tuttavia, al momento non è ancora chiaro chi potrebbe prendere il posto del Premier dimissionario, e quali saranno le conseguenze politiche di questa situazione.
                                                 </li>
                                                 <li class="article-author mt-2">
-                                                    di <author>Giovanni Giovannini</author>
+                                                    di <author>ChatGPT</author>
                                                 </li>
                                             </ul>
                                             <div class="article-correlated col-12">
                                                 <a class="correlated-link mt-2" href="#">
-                                                    <b class="root" >Articolo /</b>
-                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    <b class="root">Articolo /</b>
+                                                    Leggi l'editoriale del Resto del Carlino sulla situazione politica italiana.
                                                 </a>
                                                 <a class="correlated-link mt-2" href="#">
-                                                    <b class="root" >Articolo /</b>
-                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    <b class="root">Articolo /</b>
+                                                    Intervista esclusiva con il leader del Partito Democratico sulle prossime mosse politiche.
                                                 </a>
                                             </div>
                                             <li class="fill-line col-12 mb-2 mt-4"></li>
@@ -475,26 +523,27 @@
                                     <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
                                         <div class="row">
                                             <div class="article-image col-12 col-md-6 py-2">
-                                                <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                                <img src="res/img/filler1.png" class="img-fluid" alt="cronaca">
                                             </div>
                                             <ul class="article-content col-12 col-md-6 px-3 pt-2">
                                                 <li class="article-annotation">Cronaca</li>
-                                                <a class="article-title" href="#"><h4>Il nuovo giornale di Doge è stato lanciato!</h4></a>
+                                                <a class="article-title" href="#"><h4>Un incidente stradale causa traffico sulla tangenziale</h4></a>
                                                 <li class="article-description">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                    Questa mattina intorno alle 8:30 si è verificato un incidente stradale sulla tangenziale che ha causato un lungo blocco del traffico in direzione nord. Secondo le prime informazioni, due veicoli sarebbero stati coinvolti nell'incidente che si è verificato all'altezza dell'uscita per la zona industriale.
+                                                    Sul posto sono intervenuti i soccorsi e la polizia stradale per gestire il traffico e rilevare le cause dell'incidente. Al momento non si hanno notizie di feriti gravi, ma pare che ci sia stata una lunga coda di macchine che ha rallentato il traffico per diversi chilometri.
                                                 </li>
                                                 <li class="article-author mt-2">
-                                                    di <author>Giovanni Giovannini</author>
+                                                    di <author>Mario Rossi</author>
                                                 </li>
                                             </ul>
                                             <div class="article-correlated col-12">
                                                 <a class="correlated-link mt-2" href="#">
-                                                    <b class="root" >Articolo /</b>
-                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    <b class="root">Articolo /</b>
+                                                    Incidente stradale a causa della pioggia: cosa fare per prevenire gli incidenti?
                                                 </a>
                                                 <a class="correlated-link mt-2" href="#">
-                                                    <b class="root" >Articolo /</b>
-                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    <b class="root">Articolo /</b>
+                                                    Auto in panne sulla tangenziale: ecco cosa fare per non bloccare il traffico
                                                 </a>
                                             </div>
                                             <li class="fill-line col-12 mb-2 mt-4"></li>
@@ -503,26 +552,26 @@
                                     <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
                                         <div class="row">
                                             <div class="article-image col-12 col-md-6 py-2">
-                                                <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                                <img src="res/img/filler1.png" class="img-fluid" alt="Manifestazione">
                                             </div>
                                             <ul class="article-content col-12 col-md-6 px-3 pt-2">
-                                                <li class="article-annotation">Cronaca</li>
-                                                <a class="article-title" href="#"><h4>Il nuovo giornale di Doge è stato lanciato!</h4></a>
+                                                <li class="article-annotation">Politica</li>
+                                                <a class="article-title" href="#"><h4>Manifestazione per il lavoro precario: in piazza contro la riforma</h4></a>
                                                 <li class="article-description">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                    Decine di migliaia di lavoratori precari hanno sfilato oggi per le vie del centro per manifestare contro la riforma che il governo sta proponendo per il lavoro a termine. La proposta prevede l'abolizione dei contratti a tempo determinato e l'introduzione di nuove forme di lavoro flessibile che, secondo i sindacati, potrebbero portare a una maggiore precarizzazione del mercato del lavoro.
                                                 </li>
                                                 <li class="article-author mt-2">
-                                                    di <author>Giovanni Giovannini</author>
+                                                    di <author>Mario Rossi</author>
                                                 </li>
                                             </ul>
                                             <div class="article-correlated col-12">
                                                 <a class="correlated-link mt-2" href="#">
-                                                    <b class="root" >Articolo /</b>
-                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    <b class="root">Articolo /</b>
+                                                    Il governo ribadisce: "nessuna precarizzazione, solo nuove opportunità di lavoro"
                                                 </a>
                                                 <a class="correlated-link mt-2" href="#">
-                                                    <b class="root" >Articolo /</b>
-                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    <b class="root">Articolo /</b>
+                                                    Intervista al Ministro del Lavoro sul futuro del lavoro in Italia
                                                 </a>
                                             </div>
                                             <li class="fill-line col-12 mb-2 mt-4"></li>
@@ -531,26 +580,28 @@
                                     <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
                                         <div class="row">
                                             <div class="article-image col-12 col-md-6 py-2">
-                                                <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                                <img src="res/img/filler1.png" class="img-fluid" alt="news">
                                             </div>
                                             <ul class="article-content col-12 col-md-6 px-3 pt-2">
-                                                <li class="article-annotation">Cronaca</li>
-                                                <a class="article-title" href="#"><h4>Il nuovo giornale di Doge è stato lanciato!</h4></a>
+                                                <li class="article-annotation">Attualità</li>
+                                                <a class="article-title" href="#"><h4>Emergenza rifiuti in città: nuove misure adottate dal Comune</h4></a>
                                                 <li class="article-description">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus metus. Vivamus tristique mattis nisi, non commodo magna fringilla at. Integer at ligula et arcu mattis mattis. Quisque tincidunt est dolor, vitae sollicitudin mauris dapibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tortor ut lacus condimentum placerat sed non arcu. Nunc vitae augue et lorem vulputate ornare. Integer iaculis porttitor libero, vitae venenatis felis imperdiet scelerisque. Cras hendrerit purus vel lectus eleifend, in dignissim tellus molestie. Nulla facilisi. Sed aliquet ex eget ex consequat, semper convallis elit finibus. Cras ac lobortis diam, non mollis ante. Proin scelerisque leo eu tempus commodo. Duis scelerisque nibh tellus, sed ullamcorper enim mattis nec. Nunc et elit diam.
+                                                    La situazione dei rifiuti nella nostra città è ormai diventata insostenibile, con cumuli di spazzatura che invadono le strade e creano problemi di igiene e sicurezza per i cittadini. Il Comune ha annunciato oggi nuove misure per affrontare l'emergenza.
+                                                    A partire dalla prossima settimana, sarà istituito un sistema di raccolta differenziata porta a porta, con ritiro giornaliero dei rifiuti organici e settimanale di quelli inorganici. Inoltre, saranno installati nuovi cassonetti a tenuta stagna in tutte le zone della città, in modo da evitare dispersione di rifiuti e cattivi odori.
+                                                    Il Comune ha anche lanciato un appello ai cittadini, chiedendo loro di collaborare attivamente al piano di emergenza. È importante che ogni abitante faccia la propria parte, seguendo le istruzioni per la raccolta differenziata e evitando di abbandonare rifiuti per strada.
                                                 </li>
                                                 <li class="article-author mt-2">
-                                                    di <author>Giovanni Giovannini</author>
+                                                    di <author>Mario Rossi</author>
                                                 </li>
                                             </ul>
                                             <div class="article-correlated col-12">
                                                 <a class="correlated-link mt-2" href="#">
-                                                    <b class="root" >Articolo /</b>
-                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    <b class="root">Articolo /</b>
+                                                    Leggi l'editoriale di Doge sulla gestione dei rifiuti in Italia!
                                                 </a>
                                                 <a class="correlated-link mt-2" href="#">
-                                                    <b class="root" >Articolo /</b>
-                                                    Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
+                                                    <b class="root">Articolo /</b>
+                                                    Rifiuti tossici nel fiume: la denuncia di un'associazione ambientalista
                                                 </a>
                                             </div>
                                             <li class="fill-line col-12 mb-2 mt-4"></li>
@@ -563,7 +614,7 @@
                                         <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
                                             <div class="row">
                                                 <div class="article-image col-12 col-md-6 py-2">
-                                                    <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                                    <img src="res/img/filler1.png" class="img-fluid" alt="dogee">
                                                 </div>
                                                 <ul class="article-content col-12 col-md-6 px-3 pt-2">
                                                     <li class="article-annotation">Cronaca</li>
@@ -577,11 +628,11 @@
                                                 </ul>
                                                 <div class="article-correlated col-12">
                                                     <a class="correlated-link mt-2" href="#">
-                                                        <b class="root" >Articolo /</b>
+                                                        <b class="root">Articolo /</b>
                                                         Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
                                                     </a>
                                                     <a class="correlated-link mt-2" href="#">
-                                                        <b class="root" >Articolo /</b>
+                                                        <b class="root">Articolo /</b>
                                                         Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
                                                     </a>
                                                 </div>
@@ -591,7 +642,7 @@
                                         <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
                                             <div class="row">
                                                 <div class="article-image col-12 col-md-6 py-2">
-                                                    <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                                    <img src="res/img/filler1.png" class="img-fluid" alt="dogee">
                                                 </div>
                                                 <ul class="article-content col-12 col-md-6 px-3 pt-2">
                                                     <li class="article-annotation">Cronaca</li>
@@ -605,11 +656,11 @@
                                                 </ul>
                                                 <div class="article-correlated col-12">
                                                     <a class="correlated-link mt-2" href="#">
-                                                        <b class="root" >Articolo /</b>
+                                                        <b class="root">Articolo /</b>
                                                         Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
                                                     </a>
                                                     <a class="correlated-link mt-2" href="#">
-                                                        <b class="root" >Articolo /</b>
+                                                        <b class="root">Articolo /</b>
                                                         Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
                                                     </a>
                                                 </div>
@@ -619,7 +670,7 @@
                                         <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
                                             <div class="row">
                                                 <div class="article-image col-12 col-md-6 py-2">
-                                                    <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                                    <img src="res/img/filler1.png" class="img-fluid" alt="dogee">
                                                 </div>
                                                 <ul class="article-content col-12 col-md-6 px-3 pt-2">
                                                     <li class="article-annotation">Cronaca</li>
@@ -633,11 +684,11 @@
                                                 </ul>
                                                 <div class="article-correlated col-12">
                                                     <a class="correlated-link mt-2" href="#">
-                                                        <b class="root" >Articolo /</b>
+                                                        <b class="root">Articolo /</b>
                                                         Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
                                                     </a>
                                                     <a class="correlated-link mt-2" href="#">
-                                                        <b class="root" >Articolo /</b>
+                                                        <b class="root">Articolo /</b>
                                                         Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
                                                     </a>
                                                 </div>
@@ -660,7 +711,7 @@
                                                 </a>
                                                 <li class="article-correlated">
                                                     <a class="correlated-link" href="#">
-                                                        <b class="root" >Articolo /</b>
+                                                        <b class="root">Articolo /</b>
                                                         Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
                                                     </a>
                                                 </li>
@@ -669,11 +720,11 @@
                                                 </li>
                                                 <div class="article-correlated col-12">
                                                     <a class="correlated-link mt-2" href="#">
-                                                        <b class="root" >Articolo /</b>
+                                                        <b class="root">Articolo /</b>
                                                         Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
                                                     </a>
                                                     <a class="correlated-link mt-2" href="#">
-                                                        <b class="root" >Articolo /</b>
+                                                        <b class="root">Articolo /</b>
                                                         Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
                                                     </a>
                                                 </div>
@@ -684,7 +735,7 @@
                                         <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
                                             <div class="row">
                                                 <div class="article-image col-12 col-md-6 py-2">
-                                                    <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                                    <img src="res/img/filler1.png" class="img-fluid" alt="dogee">
                                                 </div>
                                                 <ul class="article-content col-12 col-md-6 px-3 pt-2">
                                                     <li class="article-annotation">Cronaca</li>
@@ -698,11 +749,11 @@
                                                 </ul>
                                                 <div class="article-correlated col-12">
                                                     <a class="correlated-link mt-2" href="#">
-                                                        <b class="root" >Articolo /</b>
+                                                        <b class="root">Articolo /</b>
                                                         Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
                                                     </a>
                                                     <a class="correlated-link mt-2" href="#">
-                                                        <b class="root" >Articolo /</b>
+                                                        <b class="root">Articolo /</b>
                                                         Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
                                                     </a>
                                                 </div>
@@ -712,7 +763,7 @@
                                         <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
                                             <div class="row">
                                                 <div class="article-image col-12 col-md-6 py-2">
-                                                    <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                                    <img src="res/img/filler1.png" class="img-fluid" alt="dogee">
                                                 </div>
                                                 <ul class="article-content col-12 col-md-6 px-3 pt-2">
                                                     <li class="article-annotation">Cronaca</li>
@@ -726,11 +777,11 @@
                                                 </ul>
                                                 <div class="article-correlated col-12">
                                                     <a class="correlated-link mt-2" href="#">
-                                                        <b class="root" >Articolo /</b>
+                                                        <b class="root">Articolo /</b>
                                                         Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
                                                     </a>
                                                     <a class="correlated-link mt-2" href="#">
-                                                        <b class="root" >Articolo /</b>
+                                                        <b class="root">Articolo /</b>
                                                         Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
                                                     </a>
                                                 </div>
@@ -740,7 +791,7 @@
                                         <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
                                             <div class="row">
                                                 <div class="article-image col-12 col-md-6 py-2">
-                                                    <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                                    <img src="res/img/filler1.png" class="img-fluid" alt="dogee">
                                                 </div>
                                                 <ul class="article-content col-12 col-md-6 px-3 pt-2">
                                                     <li class="article-annotation">Cronaca</li>
@@ -754,11 +805,11 @@
                                                 </ul>
                                                 <div class="article-correlated col-12">
                                                     <a class="correlated-link mt-2" href="#">
-                                                        <b class="root" >Articolo /</b>
+                                                        <b class="root">Articolo /</b>
                                                         Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
                                                     </a>
                                                     <a class="correlated-link mt-2" href="#">
-                                                        <b class="root" >Articolo /</b>
+                                                        <b class="root">Articolo /</b>
                                                         Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
                                                     </a>
                                                 </div>
@@ -781,7 +832,7 @@
                                                 </a>
                                                 <li class="article-correlated">
                                                     <a class="correlated-link" href="#">
-                                                        <b class="root" >Articolo /</b>
+                                                        <b class="root">Articolo /</b>
                                                         Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
                                                     </a>
                                                 </li>
@@ -790,11 +841,11 @@
                                                 </li>
                                                 <div class="article-correlated col-12">
                                                     <a class="correlated-link mt-2" href="#">
-                                                        <b class="root" >Articolo /</b>
+                                                        <b class="root">Articolo /</b>
                                                         Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
                                                     </a>
                                                     <a class="correlated-link mt-2" href="#">
-                                                        <b class="root" >Articolo /</b>
+                                                        <b class="root">Articolo /</b>
                                                         Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
                                                     </a>
                                                 </div>
@@ -804,7 +855,7 @@
                                         <article class="article article-inline container-fluid col-12 col-md-12 mt-2">
                                             <div class="row">
                                                 <div class="article-image col-12 col-md-6 py-2">
-                                                    <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                                    <img src="res/img/filler1.png" class="img-fluid" alt="dogee">
                                                 </div>
                                                 <ul class="article-content col-12 col-md-6 px-3 pt-2">
                                                     <li class="article-annotation">Cronaca</li>
@@ -818,11 +869,11 @@
                                                 </ul>
                                                 <div class="article-correlated col-12">
                                                     <a class="correlated-link mt-2" href="#">
-                                                        <b class="root" >Articolo /</b>
+                                                        <b class="root">Articolo /</b>
                                                         Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
                                                     </a>
                                                     <a class="correlated-link mt-2" href="#">
-                                                        <b class="root" >Articolo /</b>
+                                                        <b class="root">Articolo /</b>
                                                         Leggi l'editoriale di Doge sulla presentazione del nuovo "il Resto del Doge"!
                                                     </a>
                                                 </div>
@@ -843,7 +894,7 @@
 
                                 <article class="article article-card col mt-3">
                                     <div class="article-image-thin">
-                                        <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                        <img src="res/img/filler1.png" class="img-fluid" alt="dogee">
                                     </div>
                                     <ul class="article-content px-3 pt-2">
                                         <li class="article-annotation">Sport</li>
@@ -857,7 +908,7 @@
                                 </article>
                                 <article class="article article-card col mt-3">
                                     <div class="article-image-thin">
-                                        <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                        <img src="res/img/filler1.png" class="img-fluid" alt="dogee">
                                     </div>
                                     <ul class="article-content px-3 pt-2">
                                         <li class="article-annotation">Sport</li>
@@ -871,7 +922,7 @@
                                 </article>
                                 <article class="article article-card col mt-3">
                                     <div class="article-image-thin">
-                                        <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                        <img src="res/img/filler1.png" class="img-fluid" alt="dogee">
                                     </div>
                                     <ul class="article-content px-3 pt-2">
                                         <li class="article-annotation">Sport</li>
@@ -892,7 +943,7 @@
 
                                 <article class="article article-card col mt-3">
                                     <div class="article-image-thin">
-                                        <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                        <img src="res/img/filler1.png" class="img-fluid" alt="dogee">
                                     </div>
                                     <ul class="article-content px-3 pt-2">
                                         <li class="article-annotation">Sport</li>
@@ -906,7 +957,7 @@
                                 </article>
                                 <article class="article article-card col mt-3">
                                     <div class="article-image-thin">
-                                        <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                        <img src="res/img/filler1.png" class="img-fluid" alt="dogee">
                                     </div>
                                     <ul class="article-content px-3 pt-2">
                                         <li class="article-annotation">Sport</li>
@@ -920,7 +971,7 @@
                                 </article>
                                 <article class="article article-card col mt-3">
                                     <div class="article-image-thin">
-                                        <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                        <img src="res/img/filler1.png" class="img-fluid" alt="dogee">
                                     </div>
                                     <ul class="article-content px-3 pt-2">
                                         <li class="article-annotation">Sport</li>
@@ -941,7 +992,7 @@
 
                                 <article class="article article-card col mt-3">
                                     <div class="article-image-thin">
-                                        <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                        <img src="res/img/filler1.png" class="img-fluid" alt="dogee">
                                     </div>
                                     <ul class="article-content px-3 pt-2">
                                         <li class="article-annotation">Sport</li>
@@ -955,7 +1006,7 @@
                                 </article>
                                 <article class="article article-card col mt-3">
                                     <div class="article-image-thin">
-                                        <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                        <img src="res/img/filler1.png" class="img-fluid" alt="dogee">
                                     </div>
                                     <ul class="article-content px-3 pt-2">
                                         <li class="article-annotation">Sport</li>
@@ -969,7 +1020,7 @@
                                 </article>
                                 <article class="article article-card col mt-3">
                                     <div class="article-image-thin">
-                                        <img src="res/img/doge.png" class="img-fluid" alt="dogee">
+                                        <img src="res/img/filler1.png" class="img-fluid" alt="dogee">
                                     </div>
                                     <ul class="article-content px-3 pt-2">
                                         <li class="article-annotation">Sport</li>
@@ -1057,6 +1108,6 @@
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-<script src="scripts/main_script.js"/>
+<script src="scripts/main_script.js"></script>
 </body>
 </html>
